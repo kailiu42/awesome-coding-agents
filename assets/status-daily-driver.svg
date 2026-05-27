@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Daily driver">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M27 58C16 55 10 46 10 35c0-9 4-18 13-27-1 9 2 16 8 21 8-8 11-17 8-27 13 7 21 19 21 33 0 12-7 21-19 23" stroke="#FF6B35" stroke-width="4.5"/>
+    <path d="M32 58c-7-3-10-8-10-15 0-8 4-14 12-21-1 8 2 12 8 17 4 4 6 8 6 13 0 3-1 5-3 6" stroke="#FFD500" stroke-width="4.5"/>
+  </g>
+</svg>

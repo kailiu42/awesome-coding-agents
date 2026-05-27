@@ -1,0 +1,14 @@
+{
+  "name": "awesome-coding-agents",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "npm run validate:catalog",
+    "validate:catalog": "node scripts/validate-catalog.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
