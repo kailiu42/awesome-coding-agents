@@ -3,7 +3,7 @@
 PORT ?= 8080
 
 validate:
-	npm run validate:list
+	npm run validate:catalog
 
 test:
 	npm test

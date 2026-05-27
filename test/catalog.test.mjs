@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import {
-  CATEGORIES,
+  CATALOG_SOURCE,
   enrichTools,
   fetchMetrics,
   formatMetricDisplay,
@@ -12,50 +12,58 @@ import {
   SITE_REPO,
 } from '../scripts/catalog.mjs';
 
-const validList = `# List
+const validReadme = `# List
 
-## Agent TUI
+## Legend
 
-| Status | Tool | Repo | Tags | Description |
-|---|---|---|---|---|
-| 🔥 | Alpha | https://github.com/example/alpha | tui, cli | Alpha desc |
-| 🧭 | Beta | https://github.com/example/beta | web | Beta desc |
+| Icon | Meaning |
+|---|---|
+| 🔥 | Daily driver |
 
-## Agent Harness
-
-| Status | Tool | Repo | Tags | Description |
-|---|---|---|---|---|
-| 👀 | Harness | https://github.com/example/harness | harness | Harness desc |
-
-## Agent Tool
+## CLI Agents
 
 | Status | Tool | Repo | Tags | Description |
 |---|---|---|---|---|
-| 🧭 | Tool | https://github.com/example/tool | usage | Tool desc |
+| 🔥 | Alpha | https://github.com/example/alpha | hash-edits, lsp | Alpha desc |
+| 🧪 | Beta | https://github.com/example/beta | terminal | Beta desc |
+
+## CLI Agent Helpers
+
+| Status | Tool | Repo | Tags | Description |
+|---|---|---|---|---|
+| 👀 | Harness | https://github.com/example/harness | microvm | Harness desc |
+
+## Experimental Category
+
+| Status | Tool | Repo | Tags | Description |
+|---|---|---|---|---|
+| 🧪 | Tool | https://github.com/example/tool | token-saving | Tool desc |
 `;
 
-test('parses valid list.md category tables', () => {
-  const tools = parseCatalog(validList);
+test('parses README catalog tables and ignores non-catalog tables', () => {
+  const tools = parseCatalog(validReadme);
+  assert.equal(CATALOG_SOURCE, 'README.md');
   assert.equal(tools.length, 4);
-  assert.deepEqual([...new Set(tools.map((tool) => tool.category))], CATEGORIES);
-  assert.deepEqual(tools[0].tags, ['tui', 'cli']);
+  assert.deepEqual([...new Set(tools.map((tool) => tool.category))], ['CLI Agents', 'CLI Agent Helpers', 'Experimental Category']);
+  assert.deepEqual(tools[0].tags, ['hash-edits', 'lsp']);
   assert.equal(tools[0].ownerRepo, 'example/alpha');
 });
 
-test('rejects unknown categories', () => {
-  assert.throws(() => parseCatalog(validList.replace('## Agent Tool', '## Other')), /Unknown category/);
+test('allows new README catalog categories', () => {
+  const tools = parseCatalog(validReadme.replace('## Experimental Category', '## Browser Agents'));
+  assert.ok(tools.some((tool) => tool.category === 'Browser Agents'));
 });
 
 test('rejects unknown statuses', () => {
-  assert.throws(() => parseCatalog(validList.replace('🔥 | Alpha', '⭐ | Alpha')), /Unknown status/);
+  assert.throws(() => parseCatalog(validReadme.replace('🔥 | Alpha', '⭐ | Alpha')), /Unknown status/);
 });
 
 test('rejects non-GitHub repo URLs', () => {
-  assert.throws(() => parseCatalog(validList.replace('https://github.com/example/alpha', 'https://example.com/alpha')), /GitHub URL/);
+  assert.throws(() => parseCatalog(validReadme.replace('https://github.com/example/alpha', 'https://example.com/alpha')), /GitHub URL/);
 });
 
 test('metric fetch failure renders N/A but keeps the tool', async () => {
-  const tools = parseCatalog(validList);
+  const tools = parseCatalog(validReadme);
   const enriched = await enrichTools(tools, {
     token: '',
     fetchImpl: async () => ({ ok: false, status: 503, text: async () => '' }),
@@ -114,24 +122,24 @@ test('uses one GitHub GraphQL request when a token is available', async () => {
 test('ranking precedence is status, stars, issues, then pull requests', () => {
   const base = [
     {
-      category: 'Agent TUI', status: '🔥', tool: 'StatusWins', repo: 'https://github.com/e/status', ownerRepo: 'e/status', tags: ['x'], description: 'x', metricsAvailable: true, metrics: { stars: 0, issues: 0, prs: 0 },
+      category: 'CLI Agents', status: '🔥', tool: 'StatusWins', repo: 'https://github.com/e/status', ownerRepo: 'e/status', tags: ['x'], description: 'x', metricsAvailable: true, metrics: { stars: 0, issues: 0, prs: 0 },
     },
     {
-      category: 'Agent TUI', status: '🧭', tool: 'HugeStars', repo: 'https://github.com/e/stars', ownerRepo: 'e/stars', tags: ['x'], description: 'x', metricsAvailable: true, metrics: { stars: 1_000_000, issues: 1_000_000, prs: 1_000_000 },
+      category: 'CLI Agents', status: '🧪', tool: 'HugeStars', repo: 'https://github.com/e/stars', ownerRepo: 'e/stars', tags: ['x'], description: 'x', metricsAvailable: true, metrics: { stars: 1_000_000, issues: 1_000_000, prs: 1_000_000 },
     },
     {
-      category: 'Agent TUI', status: '👀', tool: 'LowStatus', repo: 'https://github.com/e/low', ownerRepo: 'e/low', tags: ['x'], description: 'x', metricsAvailable: true, metrics: { stars: 1_000_000, issues: 1_000_000, prs: 1_000_000 },
+      category: 'CLI Agents', status: '👀', tool: 'LowStatus', repo: 'https://github.com/e/low', ownerRepo: 'e/low', tags: ['x'], description: 'x', metricsAvailable: true, metrics: { stars: 1_000_000, issues: 1_000_000, prs: 1_000_000 },
     },
   ];
-  const ranked = groupAndRank(base)['Agent TUI'];
+  const ranked = groupAndRank(base)['CLI Agents'];
   assert.equal(ranked[0].tool, 'StatusWins');
 
   const metricOnly = [
-    { ...base[0], status: '🧭', tool: 'Stars', metrics: { stars: 10, issues: 0, prs: 0 } },
-    { ...base[0], status: '🧭', tool: 'Issues', metrics: { stars: 0, issues: 10_000, prs: 0 } },
-    { ...base[0], status: '🧭', tool: 'PRs', metrics: { stars: 0, issues: 0, prs: 10_000 } },
+    { ...base[0], status: '🧪', tool: 'Stars', metrics: { stars: 10, issues: 0, prs: 0 } },
+    { ...base[0], status: '🧪', tool: 'Issues', metrics: { stars: 0, issues: 10_000, prs: 0 } },
+    { ...base[0], status: '🧪', tool: 'PRs', metrics: { stars: 0, issues: 0, prs: 10_000 } },
   ];
-  assert.deepEqual(groupAndRank(metricOnly)['Agent TUI'].map((tool) => tool.tool), ['Stars', 'Issues', 'PRs']);
+  assert.deepEqual(groupAndRank(metricOnly)['CLI Agents'].map((tool) => tool.tool), ['Stars', 'Issues', 'PRs']);
 });
 
 test('formats metrics above 1000 with k suffix', () => {
@@ -143,13 +151,13 @@ test('formats metrics above 1000 with k suffix', () => {
 });
 
 test('generated HTML defaults to the upstream repository callout', () => {
-  const html = renderHtml({ 'Agent TUI': [], 'Agent Harness': [], 'Agent Tool': [] }, new Date('2026-05-26T00:00:00Z'));
+  const html = renderHtml({ 'CLI Agents': [], 'CLI Agent Helpers': [], 'Token Savers': [] }, new Date('2026-05-26T00:00:00Z'));
   assert.equal(SITE_REPO, 'kailiu42/awesome-coding-agents');
   assert.match(html, /https:\/\/github.com\/kailiu42\/awesome-coding-agents/);
 });
 
 test('generated HTML contains controls, metrics, and IKB theme constraints', () => {
-  const tools = parseCatalog(validList).map((tool) => ({
+  const tools = parseCatalog(validReadme).map((tool) => ({
     ...tool,
     metricsAvailable: true,
     metrics: { stars: 1234, issues: 999, prs: 1000 },
@@ -171,7 +179,9 @@ test('generated HTML contains controls, metrics, and IKB theme constraints', () 
   assert.match(html, /--status-hot: #FF6B35/);
   assert.match(html, /--status-warm: #FFD500/);
   assert.match(html, /var\(--status-hot\)/);
-  assert.match(html, /--status-discovered: #0F7A3A/);
+  assert.match(html, /--status-experimenting: #0F7A3A/);
+  assert.match(html, /--status-discovered: #4B4B4B/);
+  assert.match(html, /var\(--status-experimenting\)/);
   assert.match(html, /var\(--status-discovered\)/);
   assert.match(html, /statusAccents/);
   assert.match(html, /--tool-accent: /);
@@ -180,7 +190,7 @@ test('generated HTML contains controls, metrics, and IKB theme constraints', () 
   assert.match(html, /\.tool h2 \{[^}]*color: var\(--tool-accent, var\(--accent\)\)/);
   assert.match(html, /statusIcon/);
   assert.match(html, /role="img"/);
-  assert.match(html, /Daily driver/);
+  assert.match(html, /Experimenting/);
   assert.match(html, /https:\/\/github.com\/example\/site/);
   assert.match(html, /GitHub upstream/);
   assert.match(html, /Star \/ contribute/);

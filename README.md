@@ -2,7 +2,48 @@
 
 > **This is a very opinionated list from my daily usage. I will try to keep 🔥 entries below 10 (or 20, if I can't 😉).**
 
-The catalog source lives in [`list.md`](./list.md). GitHub Pages is generated from that Markdown file plus deployment-time GitHub activity metrics.
+> See [AGENTS.md](./AGENTS.md) for contribution guidelines when adding entries.
+
+GitHub Pages is generated directly from the catalog tables in this README plus deployment-time GitHub activity metrics.
+
+## Legend
+
+| Icon | Meaning |
+|------|---------|
+| 🔥 | Long-term daily driver — proven, highly recommended |
+| 🧪 | Actively trying out, but not daily used |
+| 👀 | Recently discovered, looks promising, not yet tried |
+
+---
+
+## CLI Agents
+
+| Status | Tool | Repo | Tags | Description |
+|---|---|---|---|---|
+| 🔥 | oh-my-pi | https://github.com/can1357/oh-my-pi | hash-edits, lsp, browser, subagents | AI coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more |
+| 🧪 | Claude Code | https://github.com/anthropics/claude-code | terminal, codebase, git-workflows | Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows — all through natural language commands |
+| 🧪 | Codex CLI | https://github.com/openai/codex | lightweight, terminal, cli | Lightweight coding agent that runs in your terminal |
+
+## CLI Agent Helpers
+
+| Status | Tool | Repo | Tags | Description |
+|---|---|---|---|---|
+| 🔥 | sandboxed-agents | https://github.com/kailiu42/sandboxed-agents | bwrap, sandbox, profiles | Unified bwrap sandbox wrapper for multiple coding agents — oh-my-pi, Claude Code, Codex — with per-agent profiles and layered config |
+| 👀 | forkd | https://github.com/deeplethe/forkd | microvm, fan-out, snapshots | MicroVM sandbox runtime for AI agent fan-out — fork 100 microVMs in ~100ms, BRANCH a live VM in ~150ms, KVM-isolated snapshot CoW |
+
+## Token Savers
+
+| Status | Tool | Repo | Tags | Description |
+|---|---|---|---|---|
+| 🧪 | rtk | https://github.com/rtk-ai/rtk | token-saving, proxy, rust | CLI proxy that reduces LLM token consumption by 60-90% on common dev commands — single Rust binary, zero dependencies |
+
+## Subscription Management
+
+| Status | Tool | Repo | Tags | Description |
+|---|---|---|---|---|
+| 🧪 | OpenUsage | https://github.com/robinebers/openusage | subscriptions, usage, dashboard | Track all your AI coding subscriptions in one place |
+
+---
 
 ## Local commands
 
@@ -12,37 +53,15 @@ make run
 make deploy
 ```
 
-- `make build` writes the static site to `dist/index.html` and fetches current GitHub stars/open issues/open PRs.
-- `make run` builds and serves `dist/` locally on port `8080`. Override with `make run PORT=3000`.
-- `make deploy` runs list validation, tests, and build; GitHub Actions uses it before uploading the Pages artifact.
-- `npm run validate:list` checks `list.md` categories, table format, statuses, required fields, tags, and GitHub repo URLs.
+- `make build` writes `dist/index.html`.
+- `make run` serves the generated site locally on port `8080`.
+- `make deploy` validates, tests, and builds the Pages artifact.
+- `npm run validate:catalog` validates the README catalog tables.
 
-## Catalog model
+## Catalog notes
 
-The catalog has three fixed categories:
+Catalog entries live directly in README tables with five columns: Status, Tool, Repo, Tags, Description. Any `##` section with that exact table header is treated as a category.
 
-- `Agent TUI`
-- `Agent Harness`
-- `Agent Tool`
+GitHub metrics are fetched at build time and are never committed back into README. Tags should highlight distinguishing traits, such as `microvm`, `sandbox`, `token-saving`, `browser`, or `subagents`.
 
-Status legend:
-
-| Icon | Meaning |
-|------|---------|
-| <img src="assets/status-daily-driver.svg" width="22" alt="Daily driver"> | Long-term daily driver — proven, highly recommended |
-| <img src="assets/status-active-using.svg" width="22" alt="Actively using"> | Actively using — currently in rotation, not yet a daily driver |
-| <img src="assets/status-discovered.svg" width="22" alt="Recently discovered"> | Recently discovered, looks promising, not yet tried |
-
-Each tool row in `list.md` includes status, official tool name, GitHub repo URL, tags, and description. GitHub metrics are fetched at build time and are never committed back into Markdown.
-
-## Adding entries
-
-Use the add-tool skill at `.agents/skills/add-tool/SKILL.md` when working with an agent. Claude-compatible setups can use the symlink at `.claude/skills/add-tool`.
-
-Manual additions must follow the same rules:
-
-- Tool name uses the official name.
-- Repo points to a GitHub repository.
-- Description uses the GitHub repository About text when available.
-- Tags are short lowercase labels such as `tui`, `cli`, `gui`, `web`, `usage`, `sandbox`, `harness`, `token`.
-- GitHub stars/issues/PR counts are not written into `list.md`.
+To add or update entries with an agent, use `.agents/skills/add-tool/SKILL.md`; Claude-compatible setups can use `.claude/skills/add-tool`.

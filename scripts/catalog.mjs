@@ -1,14 +1,14 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
-export const CATEGORIES = ['Agent TUI', 'Agent Harness', 'Agent Tool'];
-export const STATUSES = ['🔥', '🧭', '👀'];
+export const STATUSES = ['🔥', '🧪', '👀'];
+export const CATALOG_SOURCE = 'README.md';
 
 export const SITE_REPO = process.env.UPSTREAM_REPOSITORY || 'kailiu42/awesome-coding-agents';
 
 const STATUS_SCORE = new Map([
   ['🔥', 3],
-  ['🧭', 2],
+  ['🧪', 2],
   ['👀', 1],
 ]);
 
@@ -16,19 +16,19 @@ const HEADER = ['Status', 'Tool', 'Repo', 'Tags', 'Description'];
 
 const STATUS_LABELS = new Map([
   ['🔥', 'Daily driver'],
-  ['🧭', 'Actively using'],
+  ['🧪', 'Experimenting'],
   ['👀', 'Recently discovered'],
 ]);
 
 const STATUS_SVGS = {
   '🔥': '<svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M27 58C16 55 10 46 10 35c0-9 4-18 13-27-1 9 2 16 8 21 8-8 11-17 8-27 13 7 21 19 21 33 0 12-7 21-19 23" stroke="var(--status-hot)" stroke-width="4.5"/><path d="M32 58c-7-3-10-8-10-15 0-8 4-14 12-21-1 8 2 12 8 17 4 4 6 8 6 13 0 3-1 5-3 6" stroke="var(--status-warm)" stroke-width="4.5"/></g></svg>',
-  '🧭': '<svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M25 7h14M32 7v7M47 15l6 6M18 17a25 25 0 1 0 28 0" stroke="var(--ink)" stroke-width="4.5"/><path d="M18 32a14 14 0 0 1 14-14M46 32a14 14 0 0 1-28 0M32 32l12-12" stroke="var(--accent)" stroke-width="4.5"/><path d="M32 25v-3M22 32h-3M32 45v-3M45 32h-3M25 25l-2-2" stroke="var(--ink)" stroke-width="4"/><circle cx="32" cy="32" r="3.5" stroke="var(--accent)" stroke-width="4"/></g></svg>',
-  '👀': '<svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 32c8-12 17-18 27-18s19 6 27 18c-8 12-17 18-27 18S13 44 5 32Z" stroke="var(--grey-3)" stroke-width="4.5"/><circle cx="32" cy="32" r="12" stroke="var(--status-discovered)" stroke-width="4.5"/><circle cx="32" cy="32" r="5" stroke="var(--ink)" stroke-width="4.5"/><path d="M25 26c1-3 3-5 6-6" stroke="var(--grey-3)" stroke-width="4"/></g></svg>',
+  '🧪': '<svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M25 6h22" stroke="var(--ink)" stroke-width="4.5"/><path d="M30 7 14 45c-3 8 2 15 11 15 5 0 10-3 12-8L53 14" stroke="var(--ink)" stroke-width="4.5"/><path d="M25 34c5 4 11 6 18 5" stroke="var(--status-experimenting)" stroke-width="4.5"/><path d="M22 42c4 4 9 5 15 4M20 48c4 3 8 4 13 3" stroke="var(--status-experimenting)" stroke-width="4.5"/><circle cx="20" cy="55" r="2" stroke="var(--status-experimenting)" stroke-width="4"/></g></svg>',
+  '👀': '<svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 32c8-12 17-18 27-18s19 6 27 18c-8 12-17 18-27 18S13 44 5 32Z" stroke="var(--status-discovered)" stroke-width="4.5"/><circle cx="32" cy="32" r="12" stroke="var(--status-discovered)" stroke-width="4.5"/><circle cx="32" cy="32" r="5" stroke="var(--status-discovered)" stroke-width="4.5"/><path d="M25 26c1-3 3-5 6-6" stroke="var(--status-discovered)" stroke-width="4"/></g></svg>',
 };
 
 const STATUS_ACCENTS = {
   '🔥': 'var(--status-hot)',
-  '🧭': 'var(--accent)',
+  '🧪': 'var(--status-experimenting)',
   '👀': 'var(--status-discovered)',
 };
 
@@ -36,37 +36,35 @@ export function parseCatalog(markdown) {
   const lines = markdown.split(/\r?\n/);
   const tools = [];
   let category = null;
-  let seenHeader = false;
+  let inCatalogTable = false;
 
   for (let index = 0; index < lines.length; index += 1) {
     const line = lines[index].trim();
-    if (!line) continue;
 
     const heading = /^##\s+(.+?)\s*$/.exec(line);
     if (heading) {
       category = heading[1];
-      seenHeader = false;
-      if (!CATEGORIES.includes(category)) {
-        throw new Error(`Unknown category '${category}' at line ${index + 1}`);
-      }
+      inCatalogTable = false;
       continue;
     }
 
-    if (!line.startsWith('|')) continue;
-    if (!category) {
-      throw new Error(`Table row before category at line ${index + 1}`);
+    if (!line.startsWith('|')) {
+      if (line) inCatalogTable = false;
+      continue;
     }
 
     const cells = splitTableRow(line);
     if (cells.every((cell) => /^-+$/.test(cell))) continue;
 
-    if (!seenHeader) {
-      if (!sameCells(cells, HEADER)) {
-        throw new Error(`Malformed table header for '${category}' at line ${index + 1}`);
+    if (sameCells(cells, HEADER)) {
+      if (!category) {
+        throw new Error(`Catalog table before category at line ${index + 1}`);
       }
-      seenHeader = true;
+      inCatalogTable = true;
       continue;
     }
+
+    if (!inCatalogTable) continue;
 
     if (cells.length !== HEADER.length) {
       throw new Error(`Malformed table row at line ${index + 1}`);
@@ -86,10 +84,8 @@ export function parseCatalog(markdown) {
     tools.push(record);
   }
 
-  for (const required of CATEGORIES) {
-    if (!tools.some((tool) => tool.category === required)) {
-      throw new Error(`Missing category '${required}' entries`);
-    }
+  if (tools.length === 0) {
+    throw new Error('No catalog entries found');
   }
 
   return tools;
@@ -317,9 +313,19 @@ export function scoreTools(tools) {
 }
 
 export function groupAndRank(tools) {
-  return Object.fromEntries(CATEGORIES.map((category) => [
+  const grouped = new Map();
+  for (const tool of tools) {
+    const bucket = grouped.get(tool.category);
+    if (bucket) {
+      bucket.push(tool);
+    } else {
+      grouped.set(tool.category, [tool]);
+    }
+  }
+
+  return Object.fromEntries([...grouped].map(([category, categoryTools]) => [
     category,
-    scoreTools(tools.filter((tool) => tool.category === category)),
+    scoreTools(categoryTools),
   ]));
 }
 
@@ -337,7 +343,8 @@ export function renderHtml(groupedTools, generatedAt = new Date(), options = {})
   const siteStars = options.siteMetricsAvailable === false ? 'N/A' : formatMetricDisplay(siteMetrics.stars);
   const siteRepoUrl = `https://github.com/${siteRepo}`;
   const statusLabels = Object.fromEntries(STATUS_LABELS);
-  const payload = JSON.stringify({ categories: CATEGORIES, tools: groupedTools, statusSvgs: STATUS_SVGS, statusLabels, statusAccents: STATUS_ACCENTS })
+  const categories = Object.keys(groupedTools);
+  const payload = JSON.stringify({ categories, tools: groupedTools, statusSvgs: STATUS_SVGS, statusLabels, statusAccents: STATUS_ACCENTS })
     .replace(/</g, '\\u003c');
 
   return `<!doctype html>
@@ -358,7 +365,8 @@ export function renderHtml(groupedTools, generatedAt = new Date(), options = {})
       --accent-on: #ffffff;
       --status-hot: #FF6B35;
       --status-warm: #FFD500;
-      --status-discovered: #0F7A3A;
+      --status-experimenting: #0F7A3A;
+      --status-discovered: #4B4B4B;
     }
     * { box-sizing: border-box; }
     body {
@@ -528,7 +536,7 @@ function escapeHtml(value) {
 }
 
 export async function build({ validateOnly = false, fetchImpl, metrics, now = new Date(), siteRepo = SITE_REPO, token = process.env.GITHUB_TOKEN } = {}) {
-  const markdown = await readFile('list.md', 'utf8');
+  const markdown = await readFile(CATALOG_SOURCE, 'utf8');
   const parsed = parseCatalog(markdown);
   if (validateOnly) return parsed;
 

@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  validate-list:
+  validate-catalog:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,5 +20,5 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Validate list.md
-        run: npm run validate:list
+      - name: Validate README catalog
+        run: npm run validate:catalog

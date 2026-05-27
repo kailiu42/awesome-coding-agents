@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Actively using">
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M25 7h14M32 7v7M47 15l6 6M18 17a25 25 0 1 0 28 0" stroke="#0a0a0a" stroke-width="4.5"/>
-    <path d="M18 32a14 14 0 0 1 14-14M46 32a14 14 0 0 1-28 0M32 32l12-12" stroke="#002FA7" stroke-width="4.5"/>
-    <path d="M32 25v-3M22 32h-3M32 45v-3M45 32h-3M25 25l-2-2" stroke="#0a0a0a" stroke-width="4"/>
-    <circle cx="32" cy="32" r="3.5" stroke="#002FA7" stroke-width="4"/>
-  </g>
-</svg>
