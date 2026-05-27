@@ -4,7 +4,7 @@
 
 > See [AGENTS.md](./AGENTS.md) for contribution guidelines when adding entries.
 
-GitHub Pages is generated directly from the catalog tables in this README plus deployment-time GitHub activity metrics.
+[Visit the web page version here](https://kailiu42.github.io/awesome-coding-agents/). It is generated directly from the catalog tables in this README plus deployment-time GitHub activity metrics.
 
 ## Legend
 
