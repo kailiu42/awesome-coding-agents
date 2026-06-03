@@ -29,6 +29,7 @@
 | Status | Tool | Repo | Tags | Description |
 |---|---|---|---|---|
 | 🔥 | sandboxed-agents | https://github.com/kailiu42/sandboxed-agents | bwrap, sandbox, profiles | Unified bwrap sandbox wrapper for multiple coding agents — oh-my-pi, Claude Code, Codex — with per-agent profiles and layered config |
+| 👀 | codex-profiles | https://github.com/Ducksss/codex-profiles | codex, profiles, account-switching | Codex CLI/Desktop profile switcher that launches Codex with isolated CODEX_HOME directories for separate auth, config, sessions, plugins, and logs |
 | 👀 | forkd | https://github.com/deeplethe/forkd | microvm, fan-out, snapshots | MicroVM sandbox runtime for AI agent fan-out — fork 100 microVMs in ~100ms, BRANCH a live VM in ~150ms, KVM-isolated snapshot CoW |
 
 ## Token Savers
