@@ -31,6 +31,7 @@
 | 🔥 | sandboxed-agents | https://github.com/kailiu42/sandboxed-agents | bwrap, sandbox, profiles | Unified bwrap sandbox wrapper for multiple coding agents — oh-my-pi, Claude Code, Codex — with per-agent profiles and layered config |
 | 👀 | codex-profiles | https://github.com/Ducksss/codex-profiles | codex, profiles, account-switching | Codex CLI/Desktop profile switcher that launches Codex with isolated CODEX_HOME directories for separate auth, config, sessions, plugins, and logs |
 | 👀 | forkd | https://github.com/deeplethe/forkd | microvm, fan-out, snapshots | MicroVM sandbox runtime for AI agent fan-out — fork 100 microVMs in ~100ms, BRANCH a live VM in ~150ms, KVM-isolated snapshot CoW |
+| 👀 | Agent Teams | https://github.com/777genius/agent-teams-ai | desktop, orchestration, kanban, review | You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode(200+ models, 75+ LLM providers, free models no auth). Build your AI company with multiple teams. |
 
 ## Token Savers
 
