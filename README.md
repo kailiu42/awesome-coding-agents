@@ -33,6 +33,13 @@
 | 👀 | [forkd](https://github.com/deeplethe/forkd) | microvm, fan-out, snapshots | MicroVM sandbox runtime for AI agent fan-out — fork 100 microVMs in ~100ms, BRANCH a live VM in ~150ms, KVM-isolated snapshot CoW |
 | 👀 | [Agent Teams](https://github.com/777genius/agent-teams-ai) | desktop, orchestration, kanban, review | You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode(200+ models, 75+ LLM providers, free models no auth). Build your AI company with multiple teams. |
 
+
+## Agent Instructions
+
+| Status | Tool | Tags | Description |
+|---|---|---|---|
+| 🔥 | [coding-agent-instructions](https://github.com/kailiu42/coding-agent-instructions) | instructions, rules, progressive-disclosure | Rules for coding agents. Modular design, progressive disclosure without eating your context window or distract your agents |
+
 ## Token Savers
 
 | Status | Tool | Tags | Description |
