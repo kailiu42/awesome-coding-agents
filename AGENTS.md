@@ -31,7 +31,7 @@ make deploy
 ```
 
 - `make build` fetches GitHub metrics and writes `dist/index.html`.
-- `make run` builds and serves `dist/` locally on port `8080`; override with `make run PORT=3000`.
+- `make run` builds and serves `dist/` locally on `127.0.0.1:8080`; override with `make run HOST=0.0.0.0 PORT=3000`.
 - `make deploy` runs catalog validation, tests, and build for GitHub Pages artifact creation in CI.
 - `npm run validate:catalog` validates README catalog tables, required fields, tags, statuses, and GitHub repo URLs without fetching GitHub metrics.
 

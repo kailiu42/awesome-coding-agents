@@ -57,7 +57,7 @@ make deploy
 ```
 
 - `make build` writes `dist/index.html`.
-- `make run` serves the generated site locally on port `8080`.
+- `make run` serves the generated site locally on `127.0.0.1:8080`; override with `make run HOST=0.0.0.0 PORT=3000`.
 - `make deploy` validates, tests, and builds the Pages artifact.
 - `npm run validate:catalog` validates the README catalog tables.
 
