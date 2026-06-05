@@ -37,11 +37,11 @@ make deploy
 
 ## Catalog Conventions
 
-- Any `##` README section with the exact table header `Status`, `Tool`, `Repo`, `Tags`, `Description` is a catalog category.
+- Any `##` README section with the exact table header `Status`, `Tool`, `Tags`, `Description` is a catalog category.
 - New categories are allowed by adding another matching table section.
-- Markdown catalog tables use exactly five columns: Status, Tool, Repo, Tags, Description.
+- Markdown catalog tables use exactly four columns: Status, Tool, Tags, Description.
 - Status values in README: 🔥, 🧪, 👀. The generated page renders them with SVG icons from `assets/status-*.svg`.
-- Repo must be a GitHub repository URL.
+- Tool must be a Markdown link to a GitHub repository URL.
 - Tags are comma-separated short lowercase feature labels; use them to emphasize distinguishing traits, not broad taxonomy.
 - Description should use GitHub repo About text when available.
 

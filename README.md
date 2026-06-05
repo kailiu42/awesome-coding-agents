@@ -18,33 +18,33 @@
 
 ## CLI Agents
 
-| Status | Tool | Repo | Tags | Description |
-|---|---|---|---|---|
-| 🔥 | oh-my-pi | https://github.com/can1357/oh-my-pi | hash-edits, lsp, browser, subagents | AI coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more |
-| 🧪 | Claude Code | https://github.com/anthropics/claude-code | terminal, codebase, git-workflows | Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows — all through natural language commands |
-| 🧪 | Codex CLI | https://github.com/openai/codex | lightweight, terminal, cli | Lightweight coding agent that runs in your terminal |
+| Status | Tool | Tags | Description |
+|---|---|---|---|
+| 🔥 | [oh-my-pi](https://github.com/can1357/oh-my-pi) | hash-edits, lsp, browser, subagents | AI coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more |
+| 🧪 | [Claude Code](https://github.com/anthropics/claude-code) | terminal, codebase, git-workflows | Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows — all through natural language commands |
+| 🧪 | [Codex CLI](https://github.com/openai/codex) | lightweight, terminal, cli | Lightweight coding agent that runs in your terminal |
 
 ## CLI Agent Helpers
 
-| Status | Tool | Repo | Tags | Description |
-|---|---|---|---|---|
-| 🔥 | sandboxed-agents | https://github.com/kailiu42/sandboxed-agents | bwrap, sandbox, profiles | Unified bwrap sandbox wrapper for multiple coding agents — oh-my-pi, Claude Code, Codex — with per-agent profiles and layered config |
-| 👀 | codex-profiles | https://github.com/Ducksss/codex-profiles | codex, profiles, account-switching | Codex CLI/Desktop profile switcher that launches Codex with isolated CODEX_HOME directories for separate auth, config, sessions, plugins, and logs |
-| 👀 | forkd | https://github.com/deeplethe/forkd | microvm, fan-out, snapshots | MicroVM sandbox runtime for AI agent fan-out — fork 100 microVMs in ~100ms, BRANCH a live VM in ~150ms, KVM-isolated snapshot CoW |
-| 👀 | Agent Teams | https://github.com/777genius/agent-teams-ai | desktop, orchestration, kanban, review | You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode(200+ models, 75+ LLM providers, free models no auth). Build your AI company with multiple teams. |
+| Status | Tool | Tags | Description |
+|---|---|---|---|
+| 🔥 | [sandboxed-agents](https://github.com/kailiu42/sandboxed-agents) | bwrap, sandbox, profiles | Unified bwrap sandbox wrapper for multiple coding agents — oh-my-pi, Claude Code, Codex — with per-agent profiles and layered config |
+| 👀 | [codex-profiles](https://github.com/Ducksss/codex-profiles) | codex, profiles, account-switching | Codex CLI/Desktop profile switcher that launches Codex with isolated CODEX_HOME directories for separate auth, config, sessions, plugins, and logs |
+| 👀 | [forkd](https://github.com/deeplethe/forkd) | microvm, fan-out, snapshots | MicroVM sandbox runtime for AI agent fan-out — fork 100 microVMs in ~100ms, BRANCH a live VM in ~150ms, KVM-isolated snapshot CoW |
+| 👀 | [Agent Teams](https://github.com/777genius/agent-teams-ai) | desktop, orchestration, kanban, review | You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode(200+ models, 75+ LLM providers, free models no auth). Build your AI company with multiple teams. |
 
 ## Token Savers
 
-| Status | Tool | Repo | Tags | Description |
-|---|---|---|---|---|
-| 🧪 | rtk | https://github.com/rtk-ai/rtk | token-saving, proxy, rust | CLI proxy that reduces LLM token consumption by 60-90% on common dev commands — single Rust binary, zero dependencies |
+| Status | Tool | Tags | Description |
+|---|---|---|---|
+| 🧪 | [rtk](https://github.com/rtk-ai/rtk) | token-saving, proxy, rust | CLI proxy that reduces LLM token consumption by 60-90% on common dev commands — single Rust binary, zero dependencies |
 
 ## Subscription Management
 
-| Status | Tool | Repo | Tags | Description |
-|---|---|---|---|---|
-| 🧪 | OpenUsage | https://github.com/robinebers/openusage | subscriptions, usage, dashboard | Track all your AI coding subscriptions in one place |
-| 👀 | Relay | https://github.com/ImBIOS/relay | llm-proxy, provider-switch, usage, quota-rotation | Universal AI API proxy — hot-switch between GitHub Copilot, OpenAI, Anthropic, DeepSeek, Groq, Ollama, and 10+ providers from Claude Code, Codex CLI, Aider, or any coding agent without restarting. Auto-rotates accounts when quota exhausted, real-time usage tracking |
+| Status | Tool | Tags | Description |
+|---|---|---|---|
+| 🧪 | [OpenUsage](https://github.com/robinebers/openusage) | subscriptions, usage, dashboard | Track all your AI coding subscriptions in one place |
+| 👀 | [Relay](https://github.com/ImBIOS/relay) | llm-proxy, provider-switch, usage, quota-rotation | Universal AI API proxy — hot-switch between GitHub Copilot, OpenAI, Anthropic, DeepSeek, Groq, Ollama, and 10+ providers from Claude Code, Codex CLI, Aider, or any coding agent without restarting. Auto-rotates accounts when quota exhausted, real-time usage tracking |
 
 ---
 
@@ -63,7 +63,7 @@ make deploy
 
 ## Catalog notes
 
-Catalog entries live directly in README tables with five columns: Status, Tool, Repo, Tags, Description. Any `##` section with that exact table header is treated as a category.
+Catalog entries live directly in README tables with four columns: Status, Tool, Tags, Description. Tool names are Markdown links to GitHub repositories, and any `##` section with that exact table header is treated as a category.
 
 GitHub metrics are fetched at build time and are never committed back into README. Tags should highlight distinguishing traits, such as `microvm`, `sandbox`, `token-saving`, `browser`, or `subagents`.
 

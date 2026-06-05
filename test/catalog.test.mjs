@@ -22,22 +22,22 @@ const validReadme = `# List
 
 ## CLI Agents
 
-| Status | Tool | Repo | Tags | Description |
-|---|---|---|---|---|
-| 🔥 | Alpha | https://github.com/example/alpha | hash-edits, lsp | Alpha desc |
-| 🧪 | Beta | https://github.com/example/beta | terminal | Beta desc |
+| Status | Tool | Tags | Description |
+|---|---|---|---|
+| 🔥 | [Alpha](https://github.com/example/alpha) | hash-edits, lsp | Alpha desc |
+| 🧪 | [Beta](https://github.com/example/beta) | terminal | Beta desc |
 
 ## CLI Agent Helpers
 
-| Status | Tool | Repo | Tags | Description |
-|---|---|---|---|---|
-| 👀 | Harness | https://github.com/example/harness | microvm | Harness desc |
+| Status | Tool | Tags | Description |
+|---|---|---|---|
+| 👀 | [Harness](https://github.com/example/harness) | microvm | Harness desc |
 
 ## Experimental Category
 
-| Status | Tool | Repo | Tags | Description |
-|---|---|---|---|---|
-| 🧪 | Tool | https://github.com/example/tool | token-saving | Tool desc |
+| Status | Tool | Tags | Description |
+|---|---|---|---|
+| 🧪 | [Tool](https://github.com/example/tool) | token-saving | Tool desc |
 `;
 
 test('parses README catalog tables and ignores non-catalog tables', () => {
@@ -55,11 +55,15 @@ test('allows new README catalog categories', () => {
 });
 
 test('rejects unknown statuses', () => {
-  assert.throws(() => parseCatalog(validReadme.replace('🔥 | Alpha', '⭐ | Alpha')), /Unknown status/);
+  assert.throws(() => parseCatalog(validReadme.replace('🔥 | [Alpha', '⭐ | [Alpha')), /Unknown status/);
 });
 
-test('rejects non-GitHub repo URLs', () => {
+test('rejects non-GitHub repo links', () => {
   assert.throws(() => parseCatalog(validReadme.replace('https://github.com/example/alpha', 'https://example.com/alpha')), /GitHub URL/);
+});
+
+test('rejects unlinked tool names', () => {
+  assert.throws(() => parseCatalog(validReadme.replace('[Alpha](https://github.com/example/alpha)', 'Alpha')), /Markdown link/);
 });
 
 test('metric fetch failure renders N/A but keeps the tool', async () => {

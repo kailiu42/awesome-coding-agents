@@ -12,7 +12,7 @@ const STATUS_SCORE = new Map([
   ['👀', 1],
 ]);
 
-const HEADER = ['Status', 'Tool', 'Repo', 'Tags', 'Description'];
+const HEADER = ['Status', 'Tool', 'Tags', 'Description'];
 
 const STATUS_LABELS = new Map([
   ['🔥', 'Daily driver'],
@@ -70,7 +70,8 @@ export function parseCatalog(markdown) {
       throw new Error(`Malformed table row at line ${index + 1}`);
     }
 
-    const [status, tool, repo, tags, description] = cells.map((cell) => cell.trim());
+    const [status, toolLink, tags, description] = cells.map((cell) => cell.trim());
+    const { tool, repo } = parseToolLink(toolLink);
     const record = {
       category,
       status,
@@ -97,6 +98,17 @@ function splitTableRow(line) {
 
 function sameCells(actual, expected) {
   return actual.length === expected.length && actual.every((cell, index) => cell === expected[index]);
+}
+
+function parseToolLink(toolLink) {
+  const link = /^\[([^\]]+)\]\(([^)\s]+)\)$/.exec(toolLink);
+  if (!link) {
+    throw new Error(`Tool must be a Markdown link to a GitHub repo: ${toolLink}`);
+  }
+  return {
+    tool: link[1].trim(),
+    repo: link[2].trim(),
+  };
 }
 
 export function parseGithubRepo(repoUrl) {

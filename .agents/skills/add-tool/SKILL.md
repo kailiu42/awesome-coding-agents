@@ -19,7 +19,7 @@ Use this skill when the user asks to add a new coding-agent tool to this reposit
   - `🔥` long-term daily driver
   - `🧪` experimenting / actively trying, not yet daily used
   - `👀` recently discovered
-- `Repo` must be a GitHub repository URL.
+- Tool must be a Markdown link to a GitHub repository URL.
 - Tool name must be the official name.
 - Description must come from GitHub repository About when available. If not available, use the official website HTML description meta header.
 - Tags are short lowercase feature labels that emphasize distinguishing traits, not broad category names.
@@ -46,8 +46,8 @@ Use this skill when the user asks to add a new coding-agent tool to this reposit
 7. Preserve the exact table columns:
 
    ```md
-   | Status | Tool | Repo | Tags | Description |
-   |---|---|---|---|---|
+   | Status | Tool | Tags | Description |
+   |---|---|---|---|
    ```
 
 8. Run `npm run validate:catalog` after editing.
@@ -55,7 +55,7 @@ Use this skill when the user asks to add a new coding-agent tool to this reposit
 ## Row Format
 
 ```md
-| 👀 | Tool Name | https://github.com/owner/repo | microvm, sandbox | GitHub About description |
+| 👀 | [Tool Name](https://github.com/owner/repo) | microvm, sandbox | GitHub About description |
 ```
 
 Do not add generated GitHub metrics to the row.
