@@ -33,6 +33,7 @@
 | 👀 | [Ariadne Loop](https://github.com/zhangzeyu99-web/ariadne-loop) | loop-engineering, verification, agent-packets | Local-first CLI and templates for turning rough coding-agent context into verifiable loop specs, agent packets, verifier gates, stop rules, rollback rules, and JSON reports |
 | 👀 | [forkd](https://github.com/deeplethe/forkd) | microvm, fan-out, snapshots | MicroVM sandbox runtime for AI agent fan-out — fork 100 microVMs in ~100ms, BRANCH a live VM in ~150ms, KVM-isolated snapshot CoW |
 | 👀 | [Agent Teams](https://github.com/777genius/agent-teams-ai) | desktop, orchestration, kanban, review | You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode(200+ models, 75+ LLM providers, free models no auth). Build your AI company with multiple teams. |
+| 👀 | [Hephaestus](https://github.com/agentlas-ai/Hephaestus) | agent-os, routing, skills, memory | Open Agent OS for Claude Code, Codex, and Cursor with meta-agent building, A2A Hub routing, local ontology, and governed memory/security gates |
 
 
 ## Agent Instructions
