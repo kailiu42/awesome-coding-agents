@@ -38,6 +38,7 @@
 | 👀 | [Tree Ring Memory](https://github.com/TerminallyLazy/Tree-Ring-Memory) | memory, local-first, sqlite, tui | Framework-agnostic, local-first memory lifecycle for AI agents: Rust CLI, SQLite/FTS recall, forgetting, audit, consolidation, DOX/Revolve adapters, and TUI. |
 | 👀 | [Oh My Hermes](https://github.com/rlaope/oh-my-hermes) | hermes, skills, workflows | Workflow skill pack for Hermes Agent that adds research, planning, coding handoff, review, QA, documentation, and long-running loop workflows |
 | 👀 | [Agent Island](https://github.com/tristan666666/agent-island) | macos, notch, monitoring, auto-resume | Native macOS notch companion for Claude Code and Codex sessions with live status and auto-resume for selected long-running tasks |
+| 👀 | [RDLeader](https://github.com/happysnaker/RDLeader) | agent-ops, control-plane, approvals, qa-evidence | Local-first control plane for supervising AI R&D workers — task ownership, runtime dispatch, result collection, approval gates, public-safe demo reset, and QA evidence |
 
 
 ## Agent Instructions
