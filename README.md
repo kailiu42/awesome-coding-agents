@@ -53,6 +53,7 @@
 | Status | Tool | Tags | Description |
 |---|---|---|---|
 | 🧪 | [rtk](https://github.com/rtk-ai/rtk) | token-saving, proxy, rust | CLI proxy that reduces LLM token consumption by 60-90% on common dev commands — single Rust binary, zero dependencies |
+| 🧪 | [ponytail](https://github.com/DietrichGebert/ponytail) | token-saving, agent-skills, minimalism | Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. |
 
 ## Subscription Management
 
