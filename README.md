@@ -41,6 +41,7 @@
 | 👀 | [Agent Island](https://github.com/tristan666666/agent-island) | macos, windows, status, local-first | Open-source status companion for Claude Code and Codex with live session state, your-turn alerts, and local monitoring |
 | 👀 | [RDLeader](https://github.com/happysnaker/RDLeader) | agent-ops, control-plane, approvals, qa-evidence | Local-first control plane for supervising AI R&D workers — task ownership, runtime dispatch, result collection, approval gates, public-safe demo reset, and QA evidence |
 | 👀 | [OpenAgentRelay](https://github.com/ShakespeareLabs/open-agent-relay) | trusted-lan, delegation, json, local-first | Turn any local agent or automation into a team-callable capability. |
+| 👀 | [breaking-coding-chaos](https://github.com/bo-cao/breaking-coding-chaos) | control-plane, skills, human-in-the-loop | Human-in-the-loop dual-loop skill suite for coding agents: throughline progress on disk, plan-spar alignment, then minimal clean-cut implement |
 
 
 ## Agent Instructions
