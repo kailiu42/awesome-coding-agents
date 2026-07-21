@@ -44,6 +44,7 @@
 | 👀 | [breaking-coding-chaos](https://github.com/bo-cao/breaking-coding-chaos) | control-plane, skills, human-in-the-loop | Human-in-the-loop dual-loop skill suite for coding agents: throughline progress on disk, plan-spar alignment, then minimal clean-cut implement |
 | 👀 | [Agent-Ready Repo Auditor](https://github.com/wrightops-ai/agent-ready-repo-auditor) | repository-audit, agent-readiness, github-actions | Free GitHub Action that scores public repositories for Codex, Claude Code, Copilot, and Cursor readiness—without cloning or executing code. |
 | 👀 | [Better Agent](https://github.com/ofekron/better-agent) | orchestration, dashboard, approvals, multi-provider | Local web workspace for coding agents — Claude, Codex, Gemini, and more in one inspectable, LAN-ready hub. |
+| 👀 | [Claudexor](https://github.com/razzant/claudexor) | control-plane, multi-harness, best-of-n, review | Local-first control plane for AI coding harnesses (Codex, Claude Code, Cursor, OpenCode): best-of-N runs, multi-model review, evidence-driven delivery |
 
 
 ## Agent Instructions
