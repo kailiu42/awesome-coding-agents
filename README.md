@@ -47,6 +47,7 @@
 | 👀 | [Claudexor](https://github.com/razzant/claudexor) | control-plane, multi-harness, best-of-n, review | Local-first control plane for AI coding harnesses (Codex, Claude Code, Cursor, OpenCode): best-of-N runs, multi-model review, evidence-driven delivery |
 | 👀 | [fractal](https://github.com/plasma-ai/fractal) | orchestration, recursive-delegation, git-worktrees, tui | Hierarchical agent loops with recursive self-organization. |
 | 👀 | [aGiTrack](https://github.com/core-aix/agitrack) | git, commits, token-accounting, dashboard | Terminal wrapper for Claude Code, Codex, and OpenCode that commits each agent turn to git, recording the prompt, model, and that turn's input/output/cache token counts in the commit message, with a local dashboard over the resulting history |
+| 👀 | [Chump](https://github.com/repairman29/chump) | multi-agent, coordination, local-first, offline | Self-hosted AI coding agent with persistent memory and bounded autonomy. Local-first, your keys, your data. Written in Rust. |
 
 
 ## Agent Instructions
