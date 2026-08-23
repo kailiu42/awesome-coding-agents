@@ -51,6 +51,7 @@
 | 👀 | [Chump](https://github.com/repairman29/chump) | multi-agent, coordination, local-first, offline | Self-hosted AI coding agent with persistent memory and bounded autonomy. Local-first, your keys, your data. Written in Rust. |
 
 
+| 👀 | [pisesh](https://github.com/Blue-B/pisesh) | tui, sessions, favorites, search | Keyboard-driven TUI to bookmark, search, rename, and resume pi coding-agent sessions — per-project view, cwd overrides, optional AI title generation, zero dependencies |
 ## Agent Instructions
 
 | Status | Tool | Tags | Description |
