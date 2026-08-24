@@ -50,7 +50,7 @@
 | 👀 | [aGiTrack](https://github.com/core-aix/agitrack) | git, commits, token-accounting, dashboard | Terminal wrapper for Claude Code, Codex, and OpenCode that commits each agent turn to git, recording the prompt, model, and that turn's input/output/cache token counts in the commit message, with a local dashboard over the resulting history |
 | 👀 | [Sillage](https://github.com/MarlBurroW/sillage) | web-ui, self-hosted, pwa | Mobile-first self-hosted web UI that drives the native Claude Code and Codex CLIs on your own machine; sessions that outlive the client, an IDE panel, its own MCP server, single Docker container |
 | 👀 | [Chump](https://github.com/repairman29/chump) | multi-agent, coordination, local-first, offline | Self-hosted AI coding agent with persistent memory and bounded autonomy. Local-first, your keys, your data. Written in Rust. |
-
+| 👀 | [pisesh](https://github.com/Blue-B/pisesh) | tui, sessions, favorites, search | Keyboard-driven TUI to bookmark, search, rename, and resume pi coding-agent sessions — per-project view, cwd overrides, optional AI title generation, zero dependencies |
 
 ## Agent Instructions
 
