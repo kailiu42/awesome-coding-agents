@@ -51,6 +51,7 @@
 | 👀 | [Sillage](https://github.com/MarlBurroW/sillage) | web-ui, self-hosted, pwa | Mobile-first self-hosted web UI that drives the native Claude Code and Codex CLIs on your own machine; sessions that outlive the client, an IDE panel, its own MCP server, single Docker container |
 | 👀 | [Chump](https://github.com/repairman29/chump) | multi-agent, coordination, local-first, offline | Self-hosted AI coding agent with persistent memory and bounded autonomy. Local-first, your keys, your data. Written in Rust. |
 | 👀 | [pisesh](https://github.com/Blue-B/pisesh) | tui, sessions, favorites, search | Keyboard-driven TUI to bookmark, search, rename, and resume pi coding-agent sessions — per-project view, cwd overrides, optional AI title generation, zero dependencies |
+| 👀 | [AI Badger](https://github.com/PVRLabs/aibadger) | local-first, context, code-review, handoff | AI Badger - Local-first tool that extracts focused repo context for any AI chat (Claude, ChatGPT, Grok, etc.) without wasting tokens on irrelevant files. |
 | 👀 | [kgai](https://github.com/kgaidev/kgai) | memory, decisions, local-first, s3-sync | Shared memory for AI dev teams — an immutable knowledge graph of the decisions behind your code, auto-captured by your agent and synced without merge conflicts. |
 
 ## Agent Instructions
@@ -65,6 +66,7 @@
 |---|---|---|---|
 | 🧪 | [rtk](https://github.com/rtk-ai/rtk) | token-saving, proxy, rust | CLI proxy that reduces LLM token consumption by 60-90% on common dev commands — single Rust binary, zero dependencies |
 | 🧪 | [ponytail](https://github.com/DietrichGebert/ponytail) | token-saving, agent-skills, minimalism | Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. |
+| 👀 | [agent-scripts](https://github.com/ejboy/agent-scripts) | token-saving, build-output, local-first | Token-efficient, local-first CLI tools for coding agents - compact Maven, npm/Node, and Go test output plus reusable development helpers. |
 
 ## Subscription Management
 
