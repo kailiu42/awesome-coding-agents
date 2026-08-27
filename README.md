@@ -51,6 +51,7 @@
 | 👀 | [Sillage](https://github.com/MarlBurroW/sillage) | web-ui, self-hosted, pwa | Mobile-first self-hosted web UI that drives the native Claude Code and Codex CLIs on your own machine; sessions that outlive the client, an IDE panel, its own MCP server, single Docker container |
 | 👀 | [Chump](https://github.com/repairman29/chump) | multi-agent, coordination, local-first, offline | Self-hosted AI coding agent with persistent memory and bounded autonomy. Local-first, your keys, your data. Written in Rust. |
 | 👀 | [pisesh](https://github.com/Blue-B/pisesh) | tui, sessions, favorites, search | Keyboard-driven TUI to bookmark, search, rename, and resume pi coding-agent sessions — per-project view, cwd overrides, optional AI title generation, zero dependencies |
+| 👀 | [kgai](https://github.com/kgaidev/kgai) | memory, decisions, local-first, s3-sync | Shared memory for AI dev teams — an immutable knowledge graph of the decisions behind your code, auto-captured by your agent and synced without merge conflicts. |
 
 ## Agent Instructions
 
