@@ -60,6 +60,12 @@
 |---|---|---|---|
 | 🔥 | [coding-agent-instructions](https://github.com/kailiu42/coding-agent-instructions) | instructions, rules, progressive-disclosure | Rules for coding agents. Modular design, progressive disclosure without eating your context window or distract your agents |
 
+## Knowledge & Context
+
+| Status | Tool | Tags | Description |
+|---|---|---|---|
+| 👀 | [wiki](https://github.com/plasma-ai/wiki) | knowledge-base, markdown, cli, agent-skills | Indexed knowledge bases with command-line tools for agents. |
+
 ## Token Savers
 
 | Status | Tool | Tags | Description |
