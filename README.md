@@ -67,6 +67,7 @@
 | Status | Tool | Tags | Description |
 |---|---|---|---|
 | 👀 | [wiki](https://github.com/plasma-ai/wiki) | knowledge-base, markdown, cli, agent-skills | Indexed knowledge bases with command-line tools for agents. |
+| 👀 | [chamnan](https://github.com/ArcticFox2029/chamnan) | context, architecture-index, impact-map, local-first, stdlib-only | Preserves a long-lived repository's engineering context — an architecture index, an impact map, session records, and the decisions behind them — as markdown committed beside the code, so an agent reads instead of rediscovering. |
 
 ## Token Savers
 
