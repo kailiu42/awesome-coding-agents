@@ -55,6 +55,7 @@
 | 👀 | [pisesh](https://github.com/Blue-B/pisesh) | tui, sessions, favorites, search | Keyboard-driven TUI to bookmark, search, rename, and resume pi coding-agent sessions — per-project view, cwd overrides, optional AI title generation, zero dependencies |
 | 👀 | [AI Badger](https://github.com/PVRLabs/aibadger) | local-first, context, code-review, handoff | AI Badger - Local-first tool that extracts focused repo context for any AI chat (Claude, ChatGPT, Grok, etc.) without wasting tokens on irrelevant files. |
 | 👀 | [kgai](https://github.com/kgaidev/kgai) | memory, decisions, local-first, s3-sync | Shared memory for AI dev teams — an immutable knowledge graph of the decisions behind your code, auto-captured by your agent and synced without merge conflicts. |
+| 👀 | [YYLO](https://github.com/yylo-dev/yylo) | orchestration, kanban, git-worktrees, multi-agent | YYLO (why-lo): AI coding-agent orchestration CLI with equivalent yylo and yy launchers. |
 
 ## Agent Instructions
 
