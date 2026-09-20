@@ -64,6 +64,7 @@
 | 👀 | [YYLO Benchmark](https://github.com/yylo-dev/yylo-benchmark) | evaluation, benchmarks, evidence, worktrees | YYLO Benchmark: longitudinal evaluation and immutable evidence for agent runs. |
 | 👀 | [Tintpad](https://github.com/sorkila/tintpad) | macos, launcher, hotkey, local-first | It falls out of your notch. Hotkey, repo, Return: your terminal opens with Claude Code, Codex or any agent already running. Free, MIT, local-only macOS. |
 | 👀 | [Orkas](https://github.com/Orkas-AI/Orkas) | desktop, orchestration, local-first, coding-agents | Orkas is an open-source, local-first AI desktop app: a commander LLM directs specialist sub-agents, and runs your installed coding CLIs — Claude Code, Codex, OpenCode, OpenClaw, Hermes — as local sessions. Agents self-evolve via reflection and skill crystallization. BYO keys. macOS / Windows / Linux. |
+| 👀 | [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) | replay, tracing, proxy, offline | Time travel for AI agents — record, replay, fork, and debug any agent run with any model |
 
 ## Agent Instructions
 
