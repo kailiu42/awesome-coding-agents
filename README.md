@@ -17,6 +17,7 @@
 ---
 
 ## CLI Agents
+- [Continuum-AI-Corp/OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) — drop-in recorder that sits between your agent and the model provider.
 
 | Status | Tool | Tags | Description |
 |---|---|---|---|
