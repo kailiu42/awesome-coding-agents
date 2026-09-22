@@ -80,6 +80,7 @@
 | 👀 | [wiki](https://github.com/plasma-ai/wiki) | knowledge-base, markdown, cli, agent-skills | Indexed knowledge bases with command-line tools for agents. |
 | 👀 | [chamnan](https://github.com/ArcticFox2029/chamnan) | context, architecture-index, impact-map, local-first, stdlib-only | Preserves a long-lived repository's engineering context — an architecture index, an impact map, session records, and the decisions behind them — as markdown committed beside the code, so an agent reads instead of rediscovering. |
 | 👀 | [ContextStream](https://github.com/contextstream/mcp-server) | context, mcp, coding-agents | Shared project context for Cursor, Claude Code, Codex, Grok. Site https://contextstream.io. MCP https://mcp.contextstream.io/mcp. Intelligence isn’t the bottleneck. Context is. |
+| 👀 | [Bhawna Skills](https://github.com/saketvishal/bhawna-skills) | decision-memory, architecture-guardrails, invariants, cli, local-first | Decision memory and architecture guardrails for AI coding agents. |
 
 ## Token Savers
 
