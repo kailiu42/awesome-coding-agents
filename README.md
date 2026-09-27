@@ -68,6 +68,8 @@
 | 👀 | [check-docs](https://github.com/ipaulsmith/check-docs) | agents-md, claude-md, pre-commit, stale-paths | A small sh pre-commit check that stops a commit when CLAUDE.md, AGENTS.md or the files they @import name a path that no longer exists or a name you deleted |
 | 👀 | [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) | replay, tracing, proxy, offline | Time travel for AI agents — record, replay, fork, and debug any agent run with any model |
 | 👀 | [swe-mux](https://github.com/jatoran/swe-mux) | multi-agent, status, mobile, tailscale, pty | Terminal multiplexer and agentic control plane with tailscale enabled. optimized for mobile development |
+| 👀 | [Coven](https://github.com/OpenCoven/coven) | daemon, pty, project-scope, multi-harness, sqlite | Local-first runtime for project-scoped AI coding-agent sessions, with durable state, authority boundaries, and multi-harness interoperability. |
+| 👀 | [Psyche Build](https://github.com/OpenCoven/psyche-build) | desktop, git-worktrees, tmux, parallel-agents | Desktop cockpit for running parallel AI coding agents in visible, isolated workspaces — from branch to review, merge, and handoff. |
 
 ## Agent Instructions
 
