@@ -71,6 +71,10 @@
 | 👀 | [Coven](https://github.com/OpenCoven/coven) | daemon, pty, project-scope, multi-harness, sqlite | Local-first runtime for project-scoped AI coding-agent sessions, with durable state, authority boundaries, and multi-harness interoperability. |
 | 👀 | [Psyche Build](https://github.com/OpenCoven/psyche-build) | desktop, git-worktrees, tmux, parallel-agents | Desktop cockpit for running parallel AI coding agents in visible, isolated workspaces — from branch to review, merge, and handoff. |
 | 👀 | [Ordewell](https://github.com/ordewell/ordewell) | orchestration, plan-first, multi-harness, verification | Multi-agent task orchestration for coding agents. Turn one goal into an ordered plan of tasks — each with its own runner, model and mode — then execute and verify the results. |
+| 👀 | [rerun-bench](https://github.com/Abelo9996/rerun-bench) | evaluation, reruns, pass-k, cost-spread | Same task, run N times: how consistent and how expensive is your coding agent? A rerun benchmark for Claude Code, Codex and OpenCode. |
+| 👀 | [open agent lab](https://github.com/Abelo9996/open-agent-lab) | evaluation, results-site, confidence-intervals | Independent, reproducible evaluation of coding agents: same tasks, many runs, intervals shown. |
+| 👀 | [snap-back](https://github.com/Abelo9996/snap-back) | undo, snapshots, shadow-git, hooks | Undo for any coding agent. Snapshots your project in a shadow git repo so one command rolls back what the agent did, without touching your own git history. |
+| 👀 | [agent-fence](https://github.com/Abelo9996/agent-fence) | permissions, policy, hooks, audit-log | One permission policy file for every coding agent: allow, ask or deny shell commands, file access and git operations, with an audit log. |
 
 ## Agent Instructions
 
@@ -108,6 +112,7 @@
 | 👀 | [ax](https://github.com/Necmttn/ax) | telemetry, dashboard, mcp, usage | Local-first observability and memory layer for AI coding-agent sessions |
 | 👀 | [Relay](https://github.com/ImBIOS/relay) | llm-proxy, provider-switch, usage, quota-rotation | Universal AI API proxy — hot-switch between GitHub Copilot, OpenAI, Anthropic, DeepSeek, Groq, Ollama, and 10+ providers from Claude Code, Codex CLI, Aider, or any coding agent without restarting. Auto-rotates accounts when quota exhausted, real-time usage tracking |
 | 👀 | [Usage HUD](https://github.com/Thalia-Bloom/usage-hud) | macos, menubar, usage, confidence | Usage HUD: one macOS menu-bar meter for Codex, Claude, Gemini, Grok and local models, with a confidence label on every number |
+| 👀 | [nerf-watch](https://github.com/Abelo9996/nerf-watch) | session-logs, regressions, local-first | Find out when your coding agent quietly got worse or more expensive. Local-first checks on Claude Code and Codex session logs, no telemetry. |
 
 ---
 | 👀 | [NextReset](https://nextreset.ai/) | codex, reset-history, incidents, local-timer | Independent Codex reset-history tracker with official incident sources and a browser-local personal timer; historical observations do not guarantee future reset timing |
