@@ -90,6 +90,7 @@
 | 👀 | [chamnan](https://github.com/ArcticFox2029/chamnan) | context, architecture-index, impact-map, local-first, stdlib-only | Preserves a long-lived repository's engineering context — an architecture index, an impact map, session records, and the decisions behind them — as markdown committed beside the code, so an agent reads instead of rediscovering. |
 | 👀 | [ContextStream](https://github.com/contextstream/mcp-server) | context, mcp, coding-agents | Shared project context for Cursor, Claude Code, Codex, Grok. Site https://contextstream.io. MCP https://mcp.contextstream.io/mcp. Intelligence isn’t the bottleneck. Context is. |
 | 👀 | [Bhawna Skills](https://github.com/saketvishal/bhawna-skills) | decision-memory, architecture-guardrails, invariants, cli, local-first | Decision memory and architecture guardrails for AI coding agents. |
+| 👀 | [Hyperconsciousness](https://github.com/louis030195/hyperconsciousness) | memory, encrypted, mcp, rust | iCloud for agents. An encrypted, permissioned knowledge layer for humans and agents. |
 
 ## Token Savers
 
