@@ -25,6 +25,7 @@
 | 🧪 | [Codex CLI](https://github.com/openai/codex) | lightweight, terminal, cli | Lightweight coding agent that runs in your terminal |
 | 🧪 | [3code](https://github.com/capocasa/3code) | cost-optimization, caching, compaction, byo-provider | The economical coding agent — token budget as a first-class constraint (chunked context, supersede-aware compaction, aggressive caching); any OpenAI-compatible endpoint, 75% fewer tokens than OpenCode on a SWE-bench subset |
 | 👀 | [molt](https://github.com/solvyxtech/molt) | verification, receipts, desktop, byo-model | A coding agent that won't say done on a false claim. Verification on disk. Receipts for accepts and refusals. Terminal and desktop. OpenAI compatible or Anthropic. |
+| 👀 | [mu](https://github.com/qybaihe/mu) | judge-model, decision-ledger, pi, desktop | mu (μ): a coding agent that thinks before it acts. A small, fast judge makes the routine calls, the big model does the work. Built on pi and AionUi. |
 
 ## CLI Agent Helpers
 
