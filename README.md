@@ -76,6 +76,7 @@
 | 👀 | [open agent lab](https://github.com/Abelo9996/open-agent-lab) | evaluation, results-site, confidence-intervals | Independent, reproducible evaluation of coding agents: same tasks, many runs, intervals shown. |
 | 👀 | [snap-back](https://github.com/Abelo9996/snap-back) | undo, snapshots, shadow-git, hooks | Undo for any coding agent. Snapshots your project in a shadow git repo so one command rolls back what the agent did, without touching your own git history. |
 | 👀 | [agent-fence](https://github.com/Abelo9996/agent-fence) | permissions, policy, hooks, audit-log | One permission policy file for every coding agent: allow, ask or deny shell commands, file access and git operations, with an audit log. |
+| 👀 | [Tale](https://github.com/tale-project/tale) | sandbox, orchestration, kanban, self-hosted | Open-source project workspace for teams and AI agents. Assign tasks, coordinate agents in persistent sandboxes, and review results together. Self-hosted or managed cloud. MIT licensed. |
 
 ## Agent Instructions
 
