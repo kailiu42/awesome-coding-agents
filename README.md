@@ -25,6 +25,7 @@
 | 🧪 | [Codex CLI](https://github.com/openai/codex) | lightweight, terminal, cli | Lightweight coding agent that runs in your terminal |
 | 🧪 | [3code](https://github.com/capocasa/3code) | cost-optimization, caching, compaction, byo-provider | The economical coding agent — token budget as a first-class constraint (chunked context, supersede-aware compaction, aggressive caching); any OpenAI-compatible endpoint, 75% fewer tokens than OpenCode on a SWE-bench subset |
 | 👀 | [molt](https://github.com/solvyxtech/molt) | verification, receipts, desktop, byo-model | A coding agent that won't say done on a false claim. Verification on disk. Receipts for accepts and refusals. Terminal and desktop. OpenAI compatible or Anthropic. |
+| 👀 | [mu](https://github.com/qybaihe/mu) | judge-model, decision-ledger, pi, desktop | mu (μ): a coding agent that thinks before it acts. A small, fast judge makes the routine calls, the big model does the work. Built on pi and AionUi. |
 
 ## CLI Agent Helpers
 
@@ -76,6 +77,8 @@
 | 👀 | [open agent lab](https://github.com/Abelo9996/open-agent-lab) | evaluation, results-site, confidence-intervals | Independent, reproducible evaluation of coding agents: same tasks, many runs, intervals shown. |
 | 👀 | [snap-back](https://github.com/Abelo9996/snap-back) | undo, snapshots, shadow-git, hooks | Undo for any coding agent. Snapshots your project in a shadow git repo so one command rolls back what the agent did, without touching your own git history. |
 | 👀 | [agent-fence](https://github.com/Abelo9996/agent-fence) | permissions, policy, hooks, audit-log | One permission policy file for every coding agent: allow, ask or deny shell commands, file access and git operations, with an audit log. |
+| 👀 | [Lockpaw](https://github.com/sorkila/lockpaw) | macos, menubar, hooks, notifications | Covers your Mac's screen with a hotkey while agents keep running, lid closed too. The locked screen glows when Claude Code, Codex, Gemini CLI, Cursor, Copilot CLI or Aider needs you. Free, MIT. |
+| 👀 | [Tale](https://github.com/tale-project/tale) | sandbox, orchestration, kanban, self-hosted | Open-source project workspace for teams and AI agents. Assign tasks, coordinate agents in persistent sandboxes, and review results together. Self-hosted or managed cloud. MIT licensed. |
 | 👀 | [Helicon](https://github.com/HarjjotSinghh/helicon) | muse-code, desktop, vscode, diffs, approvals | Open-source desktop app and VS Code extension for Meta's Muse Code CLI, with threads, inline diffs and approvals on Windows, macOS and Linux. Unofficial, not affiliated with Meta. |
 
 ## Agent Instructions
