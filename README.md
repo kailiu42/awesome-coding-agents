@@ -81,6 +81,7 @@
 | 👀 | [Lockpaw](https://github.com/sorkila/lockpaw) | macos, menubar, hooks, notifications | Covers your Mac's screen with a hotkey while agents keep running, lid closed too. The locked screen glows when Claude Code, Codex, Gemini CLI, Cursor, Copilot CLI or Aider needs you. Free, MIT. |
 | 👀 | [Tale](https://github.com/tale-project/tale) | sandbox, orchestration, kanban, self-hosted | Open-source project workspace for teams and AI agents. Assign tasks, coordinate agents in persistent sandboxes, and review results together. Self-hosted or managed cloud. MIT licensed. |
 | 👀 | [Helicon](https://github.com/HarjjotSinghh/helicon) | muse-code, desktop, vscode, diffs, approvals | Open-source desktop app and VS Code extension for Meta's Muse Code CLI, with threads, inline diffs and approvals on Windows, macOS and Linux. Unofficial, not affiliated with Meta. |
+| 👀 | [subagent-tuner](https://github.com/Kruhlikau/subagent-tuner) | claude-code, subagents, model-selection, effort | Claude Code mod: picks the model and reasoning effort of every subagent |
 
 ## Agent Instructions
 
