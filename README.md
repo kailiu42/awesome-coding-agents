@@ -123,6 +123,7 @@
 | 👀 | [Relay](https://github.com/ImBIOS/relay) | llm-proxy, provider-switch, usage, quota-rotation | Universal AI API proxy — hot-switch between GitHub Copilot, OpenAI, Anthropic, DeepSeek, Groq, Ollama, and 10+ providers from Claude Code, Codex CLI, Aider, or any coding agent without restarting. Auto-rotates accounts when quota exhausted, real-time usage tracking |
 | 👀 | [Usage HUD](https://github.com/Thalia-Bloom/usage-hud) | macos, menubar, usage, confidence | Usage HUD: one macOS menu-bar meter for Codex, Claude, Gemini, Grok and local models, with a confidence label on every number |
 | 👀 | [nerf-watch](https://github.com/Abelo9996/nerf-watch) | session-logs, regressions, local-first | Find out when your coding agent quietly got worse or more expensive. Local-first checks on Claude Code and Codex session logs, no telemetry. |
+| 👀 | [tokenreceipt](https://github.com/henrikdukefoss/tokenreceipt) | usage, cost, local-first, receipt | A till receipt for your AI agent token usage at API list prices. Claude Code, Codex, OpenCode, Gemini CLI, Cline, Roo, Kilo, Pi, Hermes. Local only. |
 
 ---
 | 👀 | [NextReset](https://nextreset.ai/) | codex, reset-history, incidents, local-timer | Independent Codex reset-history tracker with official incident sources and a browser-local personal timer; historical observations do not guarantee future reset timing |
