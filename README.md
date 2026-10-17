@@ -86,6 +86,7 @@
 | 👀 | [harness-scope](https://github.com/shimo4228/harness-scope) | claude-code, profiles, per-repo, skills | A Claude Code mod that turns your global skills, agents, rules and tools on or off per repo with named profiles. In my writing repo, it hid 94 of the 101 skills with one line. |
 | 👀 | [SpaceApp](https://github.com/oll4com/spaceapp) | self-hosted, web-ui, multi-agent, docker, source-available | Self-hosted web workspace that runs OpenCode, Codex, Claude Code, Gemini CLI and other coding CLIs side by side in persistent rooms, with MCP servers and managed browser panes |
 | 👀 | [CurlShot MCP](https://github.com/SergiuPogor/curlshot-mcp) | mcp, screenshot, pdf, hosted | Hosted MCP server for CurlShot: let AI agents take screenshots of any web page (PNG, JPEG, WebP, PDF, video). Setup for Claude, Cursor, VS Code. |
+| 👀 | [Sqwakie](https://github.com/alexcarney460-hue/walkie) | multi-agent, peer-to-peer, kanban, mcp, source-available | A walkie-talkie for your team's AI agents: Mission Control, project boards with Data Rooms, seats, peer-to-peer Walkie Direct, pooled local LLMs. FSL-1.1-ALv2. |
 
 ## Agent Instructions
 
