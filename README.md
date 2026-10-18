@@ -26,6 +26,7 @@
 | 🧪 | [3code](https://github.com/capocasa/3code) | cost-optimization, caching, compaction, byo-provider | The economical coding agent — token budget as a first-class constraint (chunked context, supersede-aware compaction, aggressive caching); any OpenAI-compatible endpoint, 75% fewer tokens than OpenCode on a SWE-bench subset |
 | 👀 | [molt](https://github.com/solvyxtech/molt) | verification, receipts, desktop, byo-model | A coding agent that won't say done on a false claim. Verification on disk. Receipts for accepts and refusals. Terminal and desktop. OpenAI compatible or Anthropic. |
 | 👀 | [mu](https://github.com/qybaihe/mu) | judge-model, decision-ledger, pi, desktop | mu (μ): a coding agent that thinks before it acts. A small, fast judge makes the routine calls, the big model does the work. Built on pi and AionUi. |
+| 👀 | [Mixdog](https://github.com/tribgames/mixdog) | desktop, model-routing, subagents, multi-provider | Open-source desktop coding agent where a lead model plans and cheaper models handle search, edits and review. |
 
 ## CLI Agent Helpers
 
@@ -86,6 +87,7 @@
 | 👀 | [harness-scope](https://github.com/shimo4228/harness-scope) | claude-code, profiles, per-repo, skills | A Claude Code mod that turns your global skills, agents, rules and tools on or off per repo with named profiles. In my writing repo, it hid 94 of the 101 skills with one line. |
 | 👀 | [SpaceApp](https://github.com/oll4com/spaceapp) | self-hosted, web-ui, multi-agent, docker, source-available | Self-hosted web workspace that runs OpenCode, Codex, Claude Code, Gemini CLI and other coding CLIs side by side in persistent rooms, with MCP servers and managed browser panes |
 | 👀 | [CurlShot MCP](https://github.com/SergiuPogor/curlshot-mcp) | mcp, screenshot, pdf, hosted | Hosted MCP server for CurlShot: let AI agents take screenshots of any web page (PNG, JPEG, WebP, PDF, video). Setup for Claude, Cursor, VS Code. |
+| 👀 | [Sqwakie](https://github.com/alexcarney460-hue/walkie) | multi-agent, peer-to-peer, kanban, mcp, source-available | A walkie-talkie for your team's AI agents: Mission Control, project boards with Data Rooms, seats, peer-to-peer Walkie Direct, pooled local LLMs. FSL-1.1-ALv2. |
 | 👀 | [Alchemist Coder](https://github.com/Alekla0126/alchemist-coder) | desktop, acp, subagents, local-models | Free, open-source desktop app for Claude Code and Codex: follow every agent and subagent live, run your own agent organization and automate routines. Also searches your Gemini CLI and Grok history. macOS, Windows, Linux. |
 
 ## Agent Instructions
