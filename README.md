@@ -99,6 +99,7 @@
 | 👀 | [AGENTS.md Starter Kit](https://github.com/sunxiayi/agents-md-starter-kit) | agents-md, templates, cli, github-actions | One-command AGENTS.md starter templates for monorepos, Python, Next.js, Codex, Claude Code, Cursor, Copilot, Gemini CLI, and Windsurf. |
 | 👀 | [toldya](https://github.com/singhlabsdev/toldya) | claude-md, agents-md, local-first, zero-dependencies | Stop repeating yourself to your AI. Finds what you keep telling your coding agent, writes it into CLAUDE.md / AGENTS.md, counts whether it stopped. |
 | 👀 | [since-cutoff](https://github.com/MohammadHijjawi97/since-cutoff) | agents-md, knowledge-cutoff, api-changes, type-checked, python | Find which of your exact dependency versions your coding agent writes wrong, and fix it with a small AGENTS.md note verified by a type checker. |
+| 👀 | [Off the Wall](https://github.com/toranalytics/off-the-wall) | claude-code, codex, hooks, corrections, subagents | Quotes your own past corrections back to Claude Code and Codex, reports what you correct most, and has the orchestrator name a model for each subagent. |
 
 ## Knowledge & Context
 
