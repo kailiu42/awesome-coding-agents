@@ -105,6 +105,7 @@
 | 👀 | [toldya](https://github.com/singhlabsdev/toldya) | claude-md, agents-md, local-first, zero-dependencies | Stop repeating yourself to your AI. Finds what you keep telling your coding agent, writes it into CLAUDE.md / AGENTS.md, counts whether it stopped. |
 | 👀 | [since-cutoff](https://github.com/MohammadHijjawi97/since-cutoff) | agents-md, knowledge-cutoff, api-changes, type-checked, python | Find which of your exact dependency versions your coding agent writes wrong, and fix it with a small AGENTS.md note verified by a type checker. |
 | 👀 | [Off the Wall](https://github.com/toranalytics/off-the-wall) | claude-code, codex, hooks, corrections, subagents | Quotes your own past corrections back to Claude Code and Codex, reports what you correct most, and has the orchestrator name a model for each subagent. |
+| 👀 | [contribpolicy](https://github.com/pujitha24/contribpolicy) | agents-md, contribution-policy, pr-lint, deterministic | Find a repository's rules for AI-assisted contributions (CONTRIBUTING, AGENTS.md, linked AI policies, org-level policies) and lint a PR against them. |
 
 ## Knowledge & Context
 
