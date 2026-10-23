@@ -94,6 +94,7 @@
 | 👀 | [autoharness](https://github.com/D-Shey/autoharness) | harness, skills, critic, mcp-gateway | Engineering discipline for coding agents: prepare before building, check against the original, let an independent critic judge the result. |
 | 👀 | [Campfire SMS](https://github.com/campfiresms/campfire-mcp) | mcp, sms, notifications, hosted | Hosted two-way SMS bridge: your coding agent texts you, you reply by SMS. Install via campfiresms.com. |
 | 👀 | [deed-page-skill](https://github.com/f-o-x11/deed-page-skill) | skill, publish, static-hosting, mcp, no-account | Agent skill: publish files to a permanent deed.page URL with one curl request. No account. |
+| 👀 | [Flisk](https://github.com/flisk-sh/flisk) | scaffolding, docker-compose, tilt, local-dev, traefik | Generate and run your whole tech stack without the setup pain: one command from an empty folder to a running stack |
 
 ## Agent Instructions
 
