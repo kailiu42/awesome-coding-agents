@@ -105,6 +105,7 @@
 | 👀 | [toldya](https://github.com/singhlabsdev/toldya) | claude-md, agents-md, local-first, zero-dependencies | Stop repeating yourself to your AI. Finds what you keep telling your coding agent, writes it into CLAUDE.md / AGENTS.md, counts whether it stopped. |
 | 👀 | [since-cutoff](https://github.com/MohammadHijjawi97/since-cutoff) | agents-md, knowledge-cutoff, api-changes, type-checked, python | Find which of your exact dependency versions your coding agent writes wrong, and fix it with a small AGENTS.md note verified by a type checker. |
 | 👀 | [Off the Wall](https://github.com/toranalytics/off-the-wall) | claude-code, codex, hooks, corrections, subagents | Quotes your own past corrections back to Claude Code and Codex, reports what you correct most, and has the orchestrator name a model for each subagent. |
+| 👀 | [agent-doctrine](https://github.com/sisig-ai/agent-doctrine) | instructions, subagents, claude-code, codex, cursor | One doctrine synced into 7 agent hosts: a lead plans and delegates to scout, implementer and reviewer subagents behind a pre-code gate, and returns a tested PR. |
 | 👀 | [contribpolicy](https://github.com/pujitha24/contribpolicy) | agents-md, contribution-policy, pr-lint, deterministic | Find a repository's rules for AI-assisted contributions (CONTRIBUTING, AGENTS.md, linked AI policies, org-level policies) and lint a PR against them. |
 
 ## Knowledge & Context
@@ -126,6 +127,7 @@
 | 🧪 | [ponytail](https://github.com/DietrichGebert/ponytail) | token-saving, agent-skills, minimalism | Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. |
 | 👀 | [agent-scripts](https://github.com/ejboy/agent-scripts) | token-saving, build-output, local-first | Token-efficient, local-first CLI tools for coding agents - compact Maven, npm/Node, and Go test output plus reusable development helpers. |
 | 👀 | [ctxtrim](https://github.com/AgentPostmortem/Ctxtrim) | context, token-saving, cli | Trim what bloats your AI coding context — find the files ballooning your Claude Code / Cursor / Codex token cost and write ignore files to cut it. Zero-dep. npx ctxtrim |
+| 👀 | [lean-agent-tools](https://github.com/SirGrokkius/lean-agent-tools) | token-saving, log-compaction, stdlib-only, cli | Stdlib-only tools that cut AI agent token and compute use |
 
 ## Subscription Management
 
