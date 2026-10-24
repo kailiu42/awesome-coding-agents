@@ -33,6 +33,7 @@
 
 | Status | Tool | Tags | Description |
 |---|---|---|---|
+| 👀 | [MultiCC](https://github.com/lsjwzh/MultiCC) | git-worktrees, mobile, handoff, orchestration | Multi Claude Code & Codex Controller |
 | 🔥 | [sandboxed-agents](https://github.com/kailiu42/sandboxed-agents) | bwrap, sandbox, profiles | Unified bwrap sandbox wrapper for multiple coding agents — oh-my-pi, Claude Code, Codex — with per-agent profiles and layered config |
 | 👀 | [codex-profiles](https://github.com/Ducksss/codex-profiles) | codex, profiles, account-switching | Codex CLI/Desktop profile switcher that launches Codex with isolated CODEX_HOME directories for separate auth, config, sessions, plugins, and logs |
 | 👀 | [SandBase CLI](https://github.com/sandbaseai/cli) | mcp, model-routing, cli | Local MCP bridge CLI that lets coding clients discover and run 2,000+ AI models and APIs |
