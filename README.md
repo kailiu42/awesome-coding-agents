@@ -28,11 +28,13 @@
 | 👀 | [mu](https://github.com/qybaihe/mu) | judge-model, decision-ledger, pi, desktop | mu (μ): a coding agent that thinks before it acts. A small, fast judge makes the routine calls, the big model does the work. Built on pi and AionUi. |
 | 👀 | [Mixdog](https://github.com/tribgames/mixdog) | desktop, model-routing, subagents, multi-provider | Open-source desktop coding agent where a lead model plans and cheaper models handle search, edits and review. |
 | 👀 | [Empryo](https://github.com/proxysoul/Empryo) | code-map, symbol-editing, terminal, desktop | AI coding harness for desktop, terminal and CI. Maps your repo, edits code by symbol through AST and LSP, then runs your checks. Any model or the plan you already pay for. Get it at https://empryo.com |
+| 👀 | [Praex](https://github.com/ailucius/praex-cli) | remote-control, mobile, hosted-models, byo-provider | Terminal-first AI coding agent with hosted no-nannying models |
 
 ## CLI Agent Helpers
 
 | Status | Tool | Tags | Description |
 |---|---|---|---|
+| 👀 | [AgentCompass](https://github.com/akiiwa-games/AgentCompass) | model-routing, quota-windows, subagents, spawn-gate | Deterministic multi-agent task router & subscription quota scheduler for Claude Code, Codex, Gemini CLI (Antigravity), Grok, and Paseo. Routes sub-agents by model DNA, ability floor, and 5h/7d rate-limit windows with a PreToolUse spawn gate. |
 | 👀 | [MultiCC](https://github.com/lsjwzh/MultiCC) | git-worktrees, mobile, handoff, orchestration | Multi Claude Code & Codex Controller |
 | 🔥 | [sandboxed-agents](https://github.com/kailiu42/sandboxed-agents) | bwrap, sandbox, profiles | Unified bwrap sandbox wrapper for multiple coding agents — oh-my-pi, Claude Code, Codex — with per-agent profiles and layered config |
 | 👀 | [codex-profiles](https://github.com/Ducksss/codex-profiles) | codex, profiles, account-switching | Codex CLI/Desktop profile switcher that launches Codex with isolated CODEX_HOME directories for separate auth, config, sessions, plugins, and logs |
@@ -97,6 +99,8 @@
 | 👀 | [Campfire SMS](https://github.com/campfiresms/campfire-mcp) | mcp, sms, notifications, hosted | Hosted two-way SMS bridge: your coding agent texts you, you reply by SMS. Install via campfiresms.com. |
 | 👀 | [deed-page-skill](https://github.com/f-o-x11/deed-page-skill) | skill, publish, static-hosting, mcp, no-account | Agent skill: publish files to a permanent deed.page URL with one curl request. No account. |
 | 👀 | [Flisk](https://github.com/flisk-sh/flisk) | scaffolding, docker-compose, tilt, local-dev, traefik | Generate and run your whole tech stack without the setup pain: one command from an empty folder to a running stack |
+| 👀 | [Quorus](https://github.com/Quorus-dev/Quorus) | multi-agent, rooms, cross-review, git-worktrees, mcp | Quorus AI: multi-agent rooms for Claude Code, Codex and opencode. Agents fix in their own git worktrees, review each other and push to your repo. MCP + CLI, MIT. |
+| 👀 | [Open Walnut](https://github.com/EvanZhang008/open-walnut) | web-ui, self-hosted, remote-ssh, mobile, session-diff | Claude Code on your laptop and remote dev boxes, in one web page. Sessions keep running when SSH drops (no tmux), each session's changes get their own diff, plus tasks, notes, and memory. Self-hosted. |
 | 👀 | [Orbi](https://github.com/orbi-build/orbi) | github-issues, background, review-gate, self-hosted | Open-source (AGPL-3.0), self-hostable lights-out software factory for the agent era: label a GitHub Issue, get an independently reviewed, merged PR and a tagged release. |
 
 ## Agent Instructions
@@ -112,6 +116,7 @@
 | 👀 | [agent-doctrine](https://github.com/sisig-ai/agent-doctrine) | instructions, subagents, claude-code, codex, cursor | One doctrine synced into 7 agent hosts: a lead plans and delegates to scout, implementer and reviewer subagents behind a pre-code gate, and returns a tested PR. |
 | 👀 | [contribpolicy](https://github.com/pujitha24/contribpolicy) | agents-md, contribution-policy, pr-lint, deterministic | Find a repository's rules for AI-assisted contributions (CONTRIBUTING, AGENTS.md, linked AI policies, org-level policies) and lint a PR against them. |
 | 👀 | [akc-cycle](https://github.com/shimo4228/akc-cycle) | claude-code, plugin, skills-audit, rules-upkeep | Keeps the rules and skills in a Claude Code setup from piling up and going stale: a Claude Code plugin of audit and upkeep skills plus an optional always-loaded rules file, the installable form of the Agent Knowledge Cycle (AKC). |
+| 👀 | [obey](https://github.com/B0yko/obey) | agents-md, rule-checks, probes, hooks | Find out which rules in your AGENTS.md your coding agent actually follows |
 
 ## Knowledge & Context
 
@@ -144,6 +149,7 @@
 | 👀 | [Usage HUD](https://github.com/Thalia-Bloom/usage-hud) | macos, menubar, usage, confidence | Usage HUD: one macOS menu-bar meter for Codex, Claude, Gemini, Grok and local models, with a confidence label on every number |
 | 👀 | [nerf-watch](https://github.com/Abelo9996/nerf-watch) | session-logs, regressions, local-first | Find out when your coding agent quietly got worse or more expensive. Local-first checks on Claude Code and Codex session logs, no telemetry. |
 | 👀 | [tokenreceipt](https://github.com/henrikdukefoss/tokenreceipt) | usage, cost, local-first, receipt | A till receipt for your AI agent token usage at API list prices. Claude Code, Codex, OpenCode, Gemini CLI, Cline, Roo, Kilo, Pi, Hermes. Local only. |
+| 👀 | [usage-float](https://github.com/akiiwa-games/usage-float) | quota-windows, multi-account, hud, windows | Borderless Windows HUD & CLI quota monitor for Claude Code, ChatGPT Codex, Grok, Google Antigravity (agy), Magpie & LiteLLM. Tracks multi-account 5h/7d rate-limit windows, redeems Claude/Codex limit-reset credits, and doubles as an mpv live wallpaper. |
 
 ---
 | 👀 | [NextReset](https://nextreset.ai/) | codex, reset-history, incidents, local-timer | Independent Codex reset-history tracker with official incident sources and a browser-local personal timer; historical observations do not guarantee future reset timing |
