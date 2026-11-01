@@ -105,6 +105,7 @@
 | 👀 | [VibeDesk](https://github.com/fxd-gif/vibedesk) | windows, desktop, parallel-sessions, phone-approvals, mcp | The calm vibe-coding IDE for Claude Code on Windows: run several sessions at a glance, approve requests from desk or phone, live preview, git and project memory – with rain on the window and lofi in your ears. Free & open source. |
 | 👀 | [Kanzo](https://github.com/emanuele-em/kanzo) | kanban, mcp, self-hosted, local-first, single-binary | Self-hosted kanban for humans and agents. One 4 MB binary, starts in 2 ms, zero setup. |
 | 👀 | [Volt](https://github.com/LeulAria/volt) | desktop, acp, vscode, local-models | An open-source cursor alternative, supporting local and frontier harnesses, built on VS Code. |
+| 👀 | [Joxo](https://github.com/JoxoAI/joxo) | team, handoffs, mobile, multi-agent | Team workspace for AI coding agents: your Claude Code, Codex, Cursor, Gemini CLI and OpenCode agents share one project, task board and handoffs. Desktop, iPhone and MCP server. |
 
 ## Agent Instructions
 
