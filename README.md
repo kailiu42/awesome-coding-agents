@@ -143,6 +143,7 @@
 | 👀 | [agent-scripts](https://github.com/ejboy/agent-scripts) | token-saving, build-output, local-first | Token-efficient, local-first CLI tools for coding agents - compact Maven, npm/Node, and Go test output plus reusable development helpers. |
 | 👀 | [ctxtrim](https://github.com/AgentPostmortem/Ctxtrim) | context, token-saving, cli | Trim what bloats your AI coding context — find the files ballooning your Claude Code / Cursor / Codex token cost and write ignore files to cut it. Zero-dep. npx ctxtrim |
 | 👀 | [lean-agent-tools](https://github.com/SirGrokkius/lean-agent-tools) | token-saving, log-compaction, stdlib-only, cli | Stdlib-only tools that cut AI agent token and compute use |
+| 👀 | [Clogmeter](https://github.com/clogmeter/clogmeter) | token-weight, agents-md, cursor-rules, duplicates | See what's clogging your AI agent: token weight, duplicates and conflicts in AGENTS.md, CLAUDE.md and Cursor rules |
 
 ## Subscription Management
 
