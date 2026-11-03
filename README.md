@@ -29,6 +29,7 @@
 | 👀 | [Mixdog](https://github.com/tribgames/mixdog) | desktop, model-routing, subagents, multi-provider | Open-source desktop coding agent where a lead model plans and cheaper models handle search, edits and review. |
 | 👀 | [Empryo](https://github.com/proxysoul/Empryo) | code-map, symbol-editing, terminal, desktop | AI coding harness for desktop, terminal and CI. Maps your repo, edits code by symbol through AST and LSP, then runs your checks. Any model or the plan you already pay for. Get it at https://empryo.com |
 | 👀 | [Praex](https://github.com/ailucius/praex-cli) | remote-control, mobile, hosted-models, byo-provider | Terminal-first AI coding agent with hosted no-nannying models |
+| 👀 | [OMK](https://github.com/dmae97/omk) | multi-agent, subagents, model-switching, test-gated-goals | Open-source multi-agent coding CLI for the terminal (TypeScript, MIT). Switch models mid-session; finish goals only when your test passes. |
 
 ## CLI Agent Helpers
 
@@ -90,7 +91,7 @@
 | 👀 | [Oh My Android](https://github.com/ateymoori/oh-my-android) | mcp, android-emulator, adb, macos | Android emulator & ADB GUI for Mac: dark mode, font size, RTL, TalkBack, network, GPS, Layout Inspector in dp. Built-in MCP server lets Claude Code, Codex and Cursor drive the emulator. |
 | 👀 | [subagent-tuner](https://github.com/Kruhlikau/subagent-tuner) | claude-code, subagents, model-selection, effort | Claude Code mod: picks the model and reasoning effort of every subagent |
 | 👀 | [harness-scope](https://github.com/shimo4228/harness-scope) | claude-code, profiles, per-repo, skills | A Claude Code mod that turns your global skills, agents, rules and tools on or off per repo with named profiles. In my writing repo, it hid 94 of the 101 skills with one line. |
-| 👀 | [SpaceApp](https://github.com/oll4com/spaceapp) | self-hosted, web-ui, multi-agent, docker, source-available | Self-hosted web workspace that runs OpenCode, Codex, Claude Code, Gemini CLI and other coding CLIs side by side in persistent rooms, with MCP servers and managed browser panes |
+| 👀 | [SpaceApp](https://github.com/oll4com/spaceapp) | self-hosted, web-ui, multi-agent, docker | Self-hosted web workspace that runs OpenCode, Codex, Claude Code, Gemini CLI and other coding CLIs side by side in persistent rooms, with MCP servers and managed browser panes |
 | 👀 | [CurlShot MCP](https://github.com/SergiuPogor/curlshot-mcp) | mcp, screenshot, pdf, hosted | Hosted MCP server for CurlShot: let AI agents take screenshots of any web page (PNG, JPEG, WebP, PDF, video). Setup for Claude, Cursor, VS Code. |
 | 👀 | [Sqwakie](https://github.com/alexcarney460-hue/walkie) | multi-agent, peer-to-peer, kanban, mcp, source-available | A walkie-talkie for your team's AI agents: Mission Control, project boards with Data Rooms, seats, peer-to-peer Walkie Direct, pooled local LLMs. FSL-1.1-ALv2. |
 | 👀 | [Alchemist Coder](https://github.com/Alekla0126/alchemist-coder) | desktop, acp, subagents, local-models | Free, open-source desktop app for Claude Code and Codex: follow every agent and subagent live, run your own agent organization and automate routines. Also searches your Gemini CLI and Grok history. macOS, Windows, Linux. |
@@ -107,7 +108,8 @@
 | 👀 | [Volt](https://github.com/LeulAria/volt) | desktop, acp, vscode, local-models | An open-source cursor alternative, supporting local and frontier harnesses, built on VS Code. |
 | 👀 | [agent-qa](https://github.com/vostride/agent-qa) | mcp, memory, self-improvement, app-testing | A test harness with memory. Write tests in natural language for web and mobile. |
 | 👀 | [Joxo](https://github.com/JoxoAI/joxo) | team, handoffs, mobile, multi-agent | Team workspace for AI coding agents: your Claude Code, Codex, Cursor, Gemini CLI and OpenCode agents share one project, task board and handoffs. Desktop, iPhone and MCP server. |
-| 👀 | [Ponder](https://github.com/Quinnod345/ponder) | deliberation-loop, code-review, coverage-gate, multi-perspective | Convergent deliberation loop and coverage gate for coding agents with four-perspective review. |
+| 👀 | [Coincide](https://github.com/apoorvdarshan/coincide) | macos, native, agent-switching, multi-harness | Native macOS (AppKit) app for Claude Code, Codex, Cursor, Grok Build, OpenCode and Antigravity — one window, one model picker, switch agents mid-thread. A native port of T3 Code. |
+| 👀 | [Ponder](https://github.com/Quinnod345/ponder) | deliberation-loop, code-review, coverage-gate, multi-perspective | Convergent deliberation loop for coding agents: multi-pass, coverage-gated, append-only ledger review and planning. Claude Code, Codex, OpenClaw. |
 
 ## Agent Instructions
 
