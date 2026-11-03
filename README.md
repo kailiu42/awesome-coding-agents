@@ -107,6 +107,7 @@
 | 👀 | [Volt](https://github.com/LeulAria/volt) | desktop, acp, vscode, local-models | An open-source cursor alternative, supporting local and frontier harnesses, built on VS Code. |
 | 👀 | [agent-qa](https://github.com/vostride/agent-qa) | mcp, memory, self-improvement, app-testing | A test harness with memory. Write tests in natural language for web and mobile. |
 | 👀 | [Joxo](https://github.com/JoxoAI/joxo) | team, handoffs, mobile, multi-agent | Team workspace for AI coding agents: your Claude Code, Codex, Cursor, Gemini CLI and OpenCode agents share one project, task board and handoffs. Desktop, iPhone and MCP server. |
+| 👀 | [Coincide](https://github.com/apoorvdarshan/coincide) | macos, native, agent-switching, multi-harness | Native macOS (AppKit) app for Claude Code, Codex, Cursor, Grok Build, OpenCode and Antigravity — one window, one model picker, switch agents mid-thread. A native port of T3 Code. |
 
 ## Agent Instructions
 
