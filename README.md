@@ -110,6 +110,7 @@
 | 👀 | [Joxo](https://github.com/JoxoAI/joxo) | team, handoffs, mobile, multi-agent | Team workspace for AI coding agents: your Claude Code, Codex, Cursor, Gemini CLI and OpenCode agents share one project, task board and handoffs. Desktop, iPhone and MCP server. |
 | 👀 | [Coincide](https://github.com/apoorvdarshan/coincide) | macos, native, agent-switching, multi-harness | Native macOS (AppKit) app for Claude Code, Codex, Cursor, Grok Build, OpenCode and Antigravity — one window, one model picker, switch agents mid-thread. A native port of T3 Code. |
 | 👀 | [Ponder](https://github.com/Quinnod345/ponder) | deliberation-loop, code-review, coverage-gate, multi-perspective | Convergent deliberation loop for coding agents: multi-pass, coverage-gated, append-only ledger review and planning. Claude Code, Codex, OpenClaw. |
+| 👀 | [Verde](https://github.com/JonathanRiche/verde) | desktop, multi-agent, tiling, local-first | Native Zig desktop workspace that runs Claude Code, Codex, Cursor and other coding agents side by side with built-in terminal and browser |
 
 ## Agent Instructions
 
