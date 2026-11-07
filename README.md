@@ -127,6 +127,7 @@
 | 👀 | [contribpolicy](https://github.com/pujitha24/contribpolicy) | agents-md, contribution-policy, pr-lint, deterministic | Find a repository's rules for AI-assisted contributions (CONTRIBUTING, AGENTS.md, linked AI policies, org-level policies) and lint a PR against them. |
 | 👀 | [akc-cycle](https://github.com/shimo4228/akc-cycle) | claude-code, plugin, skills-audit, rules-upkeep | Keeps the rules and skills in a Claude Code setup from piling up and going stale: a Claude Code plugin of audit and upkeep skills plus an optional always-loaded rules file, the installable form of the Agent Knowledge Cycle (AKC). |
 | 👀 | [obey](https://github.com/B0yko/obey) | agents-md, rule-checks, probes, hooks | Find out which rules in your AGENTS.md your coding agent actually follows |
+| 👀 | [Context Drift](https://github.com/theluckystrike/context-drift) | agents-md, claude-md, linter, vscode, cli | Find stale commands, paths, package managers and versions in AGENTS.md, CLAUDE.md, Cursor and Copilot instruction files. VS Code extension + CLI. |
 
 ## Knowledge & Context
 
