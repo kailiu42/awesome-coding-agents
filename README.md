@@ -30,6 +30,7 @@
 | 👀 | [Empryo](https://github.com/proxysoul/Empryo) | code-map, symbol-editing, terminal, desktop | AI coding harness for desktop, terminal and CI. Maps your repo, edits code by symbol through AST and LSP, then runs your checks. Any model or the plan you already pay for. Get it at https://empryo.com |
 | 👀 | [Praex](https://github.com/ailucius/praex-cli) | remote-control, mobile, hosted-models, byo-provider | Terminal-first AI coding agent with hosted no-nannying models |
 | 👀 | [OMK](https://github.com/dmae97/omk) | multi-agent, subagents, model-switching, test-gated-goals | Open-source multi-agent coding CLI for the terminal (TypeScript, MIT). Switch models mid-session; finish goals only when your test passes. |
+| 👀 | [Revo](https://github.com/shyringo/revo) | continuous-life, durable-memory, terminal, mit | Terminal agent harness that starts its own work cycles with no prompt, keeps a single append-only life log instead of sessions, and restores unfinished work after sleep or restart |
 
 ## CLI Agent Helpers
 
