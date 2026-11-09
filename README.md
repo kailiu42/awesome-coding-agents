@@ -35,6 +35,7 @@
 
 | Status | Tool | Tags | Description |
 |---|---|---|---|
+| 👀 | [Conduit Bridge](https://github.com/CommsConnectgmbh/conduit-bridge) | remote-control, mobile, local-history, multi-agent | Runs Claude Code, Codex, Antigravity, or Ollama for local text chat on your computer and connects them to the Conduit apps; app-to-bridge traffic is end-to-end encrypted and chat history stays in local SQLite. Requires a Conduit account and provider access. [Homepage](https://tryconduit.de). Published by Comms Connect; this entry was prepared with AI assistance. |
 | 👀 | [AgentCompass](https://github.com/akiiwa-games/AgentCompass) | model-routing, quota-windows, subagents, spawn-gate | Deterministic multi-agent task router & subscription quota scheduler for Claude Code, Codex, Gemini CLI (Antigravity), Grok, and Paseo. Routes sub-agents by model DNA, ability floor, and 5h/7d rate-limit windows with a PreToolUse spawn gate. |
 | 👀 | [MultiCC](https://github.com/lsjwzh/MultiCC) | git-worktrees, mobile, handoff, orchestration | Multi Claude Code & Codex Controller |
 | 🔥 | [sandboxed-agents](https://github.com/kailiu42/sandboxed-agents) | bwrap, sandbox, profiles | Unified bwrap sandbox wrapper for multiple coding agents — oh-my-pi, Claude Code, Codex — with per-agent profiles and layered config |
