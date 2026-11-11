@@ -119,6 +119,7 @@
 
 | Status | Tool | Tags | Description |
 |---|---|---|---|
+| 👀 | [AGENTS.md Check](https://github.com/yangdoh/agents-md-check) | agents-md, offline, zero-dependencies | Offline checks for AGENTS.md instruction files |
 | 🔥 | [coding-agent-instructions](https://github.com/kailiu42/coding-agent-instructions) | instructions, rules, progressive-disclosure | Rules for coding agents. Modular design, progressive disclosure without eating your context window or distract your agents |
 | 👀 | [Agent Quality Kit](https://github.com/arsen-ask-lx/Agent_Quality_Kit) | agents-md, quality-gates, exit-codes, compliance-levels, zero-dependencies | Turns the rules an agent is supposed to follow into commands with exit codes, and reports which of them actually run. Levels AQK-0…3 computed by a run. Zero dependencies. |
 | 👀 | [AGENTS.md Starter Kit](https://github.com/sunxiayi/agents-md-starter-kit) | agents-md, templates, cli, github-actions | One-command AGENTS.md starter templates for monorepos, Python, Next.js, Codex, Claude Code, Cursor, Copilot, Gemini CLI, and Windsurf. |
