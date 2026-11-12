@@ -30,12 +30,14 @@
 | 👀 | [Empryo](https://github.com/proxysoul/Empryo) | code-map, symbol-editing, terminal, desktop | AI coding harness for desktop, terminal and CI. Maps your repo, edits code by symbol through AST and LSP, then runs your checks. Any model or the plan you already pay for. Get it at https://empryo.com |
 | 👀 | [Praex](https://github.com/ailucius/praex-cli) | remote-control, mobile, hosted-models, byo-provider | Terminal-first AI coding agent with hosted no-nannying models |
 | 👀 | [OMK](https://github.com/dmae97/omk) | multi-agent, subagents, model-switching, test-gated-goals | Open-source multi-agent coding CLI for the terminal (TypeScript, MIT). Switch models mid-session; finish goals only when your test passes. |
-| 👀 | [Revo](https://github.com/shyringo/revo) | continuous-life, durable-memory, terminal, mit | Terminal agent harness that starts its own work cycles with no prompt, keeps a single append-only life log instead of sessions, and restores unfinished work after sleep or restart |
+| 👀 | [whycodes](https://github.com/whycorporation/whycodes) | rust, tui, byo-provider, local-models | A fast, provider-independent coding agent for the terminal, written in Rust. |
+| 👀 | [Revo](https://github.com/shyringo/revo) | continuous-life, durable-memory, terminal, mit | A terminal AI agent that starts working without a prompt and keeps one durable memory across restarts. Node.js TUI harness, MIT, any OpenAI-compatible key. |
 
 ## CLI Agent Helpers
 
 | Status | Tool | Tags | Description |
 |---|---|---|---|
+| 👀 | [Conduit Bridge](https://github.com/CommsConnectgmbh/conduit-bridge) | remote-control, mobile, local-history, multi-agent | Conduit bridge: runs on your computer and connects the Conduit apps to Claude Code, Codex, Gemini and Ollama, end-to-end encrypted, with local speech. |
 | 👀 | [AgentCompass](https://github.com/akiiwa-games/AgentCompass) | model-routing, quota-windows, subagents, spawn-gate | Deterministic multi-agent task router & subscription quota scheduler for Claude Code, Codex, Gemini CLI (Antigravity), Grok, and Paseo. Routes sub-agents by model DNA, ability floor, and 5h/7d rate-limit windows with a PreToolUse spawn gate. |
 | 👀 | [MultiCC](https://github.com/lsjwzh/MultiCC) | git-worktrees, mobile, handoff, orchestration | Multi Claude Code & Codex Controller |
 | 🔥 | [sandboxed-agents](https://github.com/kailiu42/sandboxed-agents) | bwrap, sandbox, profiles | Unified bwrap sandbox wrapper for multiple coding agents — oh-my-pi, Claude Code, Codex — with per-agent profiles and layered config |
@@ -125,7 +127,7 @@
 | 👀 | [AGENTS.md Starter Kit](https://github.com/sunxiayi/agents-md-starter-kit) | agents-md, templates, cli, github-actions | One-command AGENTS.md starter templates for monorepos, Python, Next.js, Codex, Claude Code, Cursor, Copilot, Gemini CLI, and Windsurf. |
 | 👀 | [toldya](https://github.com/singhlabsdev/toldya) | claude-md, agents-md, local-first, zero-dependencies | Stop repeating yourself to your AI. Finds what you keep telling your coding agent, writes it into CLAUDE.md / AGENTS.md, counts whether it stopped. |
 | 👀 | [since-cutoff](https://github.com/MohammadHijjawi97/since-cutoff) | agents-md, knowledge-cutoff, api-changes, type-checked, python | Find which of your exact dependency versions your coding agent writes wrong, and fix it with a small AGENTS.md note verified by a type checker. |
-| 👀 | [Off the Wall](https://github.com/toranalytics/off-the-wall) | claude-code, codex, hooks, corrections, subagents | Quotes your own past corrections back to Claude Code and Codex, reports what you correct most, and has the orchestrator name a model for each subagent. |
+| 👀 | [Dude Toldya](https://github.com/toranalytics/dude-toldya) | claude-code, codex, hooks, corrections, subagents | Quotes your own past corrections back to Claude Code and Codex, reports what you correct most, and has the orchestrator name a model for each subagent. |
 | 👀 | [agent-doctrine](https://github.com/sisig-ai/agent-doctrine) | instructions, subagents, claude-code, codex, cursor | One doctrine synced into 7 agent hosts: a lead plans and delegates to scout, implementer and reviewer subagents behind a pre-code gate, and returns a tested PR. |
 | 👀 | [contribpolicy](https://github.com/pujitha24/contribpolicy) | agents-md, contribution-policy, pr-lint, deterministic | Find a repository's rules for AI-assisted contributions (CONTRIBUTING, AGENTS.md, linked AI policies, org-level policies) and lint a PR against them. |
 | 👀 | [akc-cycle](https://github.com/shimo4228/akc-cycle) | claude-code, plugin, skills-audit, rules-upkeep | Keeps the rules and skills in a Claude Code setup from piling up and going stale: a Claude Code plugin of audit and upkeep skills plus an optional always-loaded rules file, the installable form of the Agent Knowledge Cycle (AKC). |
