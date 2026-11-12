@@ -118,6 +118,7 @@
 | 👀 | [Crit](https://github.com/tomasz-tomczyk/crit) | code-review, plans, browser, local-first | Review AI coding agents' plans, diffs and running apps in the browser. Local-first, works with any agent. |
 | 👀 | [Verde](https://github.com/JonathanRiche/verde) | desktop, multi-agent, tiling, local-first | Native Zig desktop workspace for AI coding agents: run Claude Code, Codex, Cursor and more side by side with a terminal and browser. Local-first, MIT. |
 | 👀 | [byagent](https://github.com/anup-a/byagent) | publishing, share-links, versions, self-hosted | A shareable link for everything your agents make. Publish HTML or Markdown from the CLI; readers comment, agents fix and republish. |
+| 👀 | [Reliant](https://github.com/reliant-labs/reliant) | yaml-workflows, approvals, cloud-machines, git-worktrees | A complete agentic environment with remote connections, workflow-based chats, and more |
 
 ## Agent Instructions
 
