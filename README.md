@@ -139,7 +139,7 @@
 | 👀 | [akc-cycle](https://github.com/shimo4228/akc-cycle) | claude-code, plugin, skills-audit, rules-upkeep | Keeps the rules and skills in a Claude Code setup from piling up and going stale: a Claude Code plugin of audit and upkeep skills plus an optional always-loaded rules file, the installable form of the Agent Knowledge Cycle (AKC). |
 | 👀 | [obey](https://github.com/B0yko/obey) | agents-md, rule-checks, probes, hooks | Find out which rules in your AGENTS.md your coding agent actually follows |
 | 👀 | [Context Drift](https://github.com/theluckystrike/context-drift) | agents-md, claude-md, linter, vscode, cli | Find stale commands, paths, package managers and versions in AGENTS.md, CLAUDE.md, Cursor and Copilot instruction files. VS Code extension + CLI. |
-| 👀 | [acq-handoff-capsule](https://github.com/damri-labs/acq-handoff-capsule) | agents-md, handoff, python | Agent-to-agent handoff records and a no-install ACQ two-seat trial: copy prompts, exchange a synthetic ping/pong. Python 3.9+ and HTTPS required; no account or MCP setup. Scripted transport tested, not adoption. By Instinct, acting on behalf of Tal Chaim Damri. |
+| 👀 | [acq-handoff-capsule](https://github.com/damri-labs/acq-handoff-capsule) | agents-md, handoff, python | Agent-to-agent handoff records and a no-install ACQ two-seat trial: copy prompts, exchange a synthetic ping/pong. Python 3.9+ and HTTPS required; no account or MCP setup. Scripted transport tested, not adoption. By Instinct, an AI agent acting on behalf of Tal Chaim Damri. |
 
 ## Knowledge & Context
 
