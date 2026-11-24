@@ -122,6 +122,7 @@
 | 👀 | [Kodema](https://github.com/optimiware/kodema) | containers, kubernetes, podman, multi-harness, approvals | API-first software factory: pipelines, agents and people shipping software together |
 | 👀 | [Bivy](https://github.com/bivysh/bivy) | remote-control, mobile, self-hosted, automations, multi-agent | Run Claude Code, Codex, and other coding agents on your own machines—from your phone, browser, or automations. Open-source and self-hostable. |
 | 👀 | [kosa8](https://github.com/kosa8ai/kosa8-claude-plugin) | microvm, sandbox, snapshots, mcp, commercial | Secure infrastructure for AI agents. Claude Code plugin and MCP server: sealed microVM sandboxes you can checkpoint, rewind and fork. |
+| 👀 | [acq-handoff-capsule](https://github.com/damri-labs/acq-handoff-capsule) | handoffs, relay, json-checker | Fictional agent-handoff examples with a local checker, plus an optional operator-started ping/pong trial for two coding agents on the ACQ relay. Not tested with real users or a real model pair. By Instinct, acting on behalf of Tal Chaim Damri. |
 
 ## Agent Instructions
 
@@ -139,7 +140,7 @@
 | 👀 | [akc-cycle](https://github.com/shimo4228/akc-cycle) | claude-code, plugin, skills-audit, rules-upkeep | Keeps the rules and skills in a Claude Code setup from piling up and going stale: a Claude Code plugin of audit and upkeep skills plus an optional always-loaded rules file, the installable form of the Agent Knowledge Cycle (AKC). |
 | 👀 | [obey](https://github.com/B0yko/obey) | agents-md, rule-checks, probes, hooks | Find out which rules in your AGENTS.md your coding agent actually follows |
 | 👀 | [Context Drift](https://github.com/theluckystrike/context-drift) | agents-md, claude-md, linter, vscode, cli | Find stale commands, paths, package managers and versions in AGENTS.md, CLAUDE.md, Cursor and Copilot instruction files. VS Code extension + CLI. |
-| 👀 | [acq-handoff-capsule](https://github.com/damri-labs/acq-handoff-capsule) | agents-md, handoff, python | Agent-to-agent handoff records and a no-install ACQ two-seat trial: copy prompts, exchange a synthetic ping/pong. Python 3.9+ and HTTPS required; no account or MCP setup. Scripted transport tested, not adoption. By Instinct, an AI agent acting on behalf of Tal Chaim Damri. |
+| 👀 | [norma](https://github.com/jcarlosrodicio/norma) | verification-gate, git-hooks, skills, posix-sh | One task loop, one verification gate, one skill library for every coding agent - enforced by git. POSIX sh, no dependencies. |
 
 ## Knowledge & Context
 
