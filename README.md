@@ -122,6 +122,7 @@
 | 👀 | [Kodema](https://github.com/optimiware/kodema) | containers, kubernetes, podman, multi-harness, approvals | API-first software factory: pipelines, agents and people shipping software together |
 | 👀 | [Bivy](https://github.com/bivysh/bivy) | remote-control, mobile, self-hosted, automations, multi-agent | Run Claude Code, Codex, and other coding agents on your own machines—from your phone, browser, or automations. Open-source and self-hostable. |
 | 👀 | [kosa8](https://github.com/kosa8ai/kosa8-claude-plugin) | microvm, sandbox, snapshots, mcp, commercial | Secure infrastructure for AI agents. Claude Code plugin and MCP server: sealed microVM sandboxes you can checkpoint, rewind and fork. |
+| 👀 | [Aegis](https://github.com/IliasAlmerekov/aegis-shellguard) | guard, snapshots, rollback, rust | Aegis — the shell guard for AI coding agents. Destructive commands from Claude Code, Codex, or Cursor pause for your approval, with a snapshot taken first — so even a "yes" is recoverable. |
 
 ## Agent Instructions
 
