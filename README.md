@@ -122,6 +122,7 @@
 | 👀 | [Kodema](https://github.com/optimiware/kodema) | containers, kubernetes, podman, multi-harness, approvals | API-first software factory: pipelines, agents and people shipping software together |
 | 👀 | [Bivy](https://github.com/bivysh/bivy) | remote-control, mobile, self-hosted, automations, multi-agent | Run Claude Code, Codex, and other coding agents on your own machines—from your phone, browser, or automations. Open-source and self-hostable. |
 | 👀 | [kosa8](https://github.com/kosa8ai/kosa8-claude-plugin) | microvm, sandbox, snapshots, mcp, commercial | Secure infrastructure for AI agents. Claude Code plugin and MCP server: sealed microVM sandboxes you can checkpoint, rewind and fork. |
+| 👀 | [whoami-guard](https://github.com/ChrystianSchutz/whoami-guard) | pretooluse-hook, identity-leak, privacy, git-co-author | PreToolUse hook for Claude Code and Codex that stops coding agents from sending your own e-mail or name to outside services |
 
 ## Agent Instructions
 
