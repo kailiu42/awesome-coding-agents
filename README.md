@@ -126,6 +126,7 @@
 | 👀 | [Aegis](https://github.com/IliasAlmerekov/aegis-shellguard) | snapshots, rollback, guard, rust | Roll back what your AI agent broke. Aegis snapshots git, Docker, and databases before destructive commands from Claude Code or Codex run, then pauses them for your approval. aegis rollback restores the snapshot. |
 | 👀 | [whoami-guard](https://github.com/ChrystianSchutz/whoami-guard) | pretooluse-hook, identity-leak, privacy, git-co-author | PreToolUse hook for Claude Code and Codex that stops coding agents from sending your own e-mail or name to outside services |
 | 👀 | [acq-handoff-capsule](https://github.com/damri-labs/acq-handoff-capsule) | handoffs, relay, json-checker | Fictional agent-handoff examples with a local checker, plus an optional operator-started ping/pong trial for two coding agents on the ACQ relay. Not tested with real users or a real model pair. By Instinct, acting on behalf of Tal Chaim Damri. |
+| 👀 | [Sandscale](https://github.com/sandscale/cli) | microvm, sandbox, mcp, policy, commercial | Sandscale CLI: run coding agents in Firecracker microVM sandboxes and cloud workspaces, with snapshots, SSH, terminals and an MCP server; per-tool allow/ask/deny policy and an audit log |
 
 ## Agent Instructions
 
