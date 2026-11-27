@@ -125,6 +125,7 @@
 | 👀 | [checkwash](https://github.com/taipei49314/checkwash) | test-integrity, no-llm, git-diff, claude-code-hooks | Flags known patterns of weakened tests and CI checks in a Git diff. |
 | 👀 | [Aegis](https://github.com/IliasAlmerekov/aegis-shellguard) | snapshots, rollback, guard, rust | Roll back what your AI agent broke. Aegis snapshots git, Docker, and databases before destructive commands from Claude Code or Codex run, then pauses them for your approval. aegis rollback restores the snapshot. |
 | 👀 | [whoami-guard](https://github.com/ChrystianSchutz/whoami-guard) | pretooluse-hook, identity-leak, privacy, git-co-author | PreToolUse hook for Claude Code and Codex that stops coding agents from sending your own e-mail or name to outside services |
+| 👀 | [acq-handoff-capsule](https://github.com/damri-labs/acq-handoff-capsule) | handoffs, relay, json-checker | Fictional agent-handoff examples with a local checker, plus an optional operator-started ping/pong trial for two coding agents on the ACQ relay. Not tested with real users or a real model pair. By Instinct, acting on behalf of Tal Chaim Damri. |
 
 ## Agent Instructions
 
