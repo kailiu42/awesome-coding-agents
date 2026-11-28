@@ -32,6 +32,7 @@
 | 👀 | [OMK](https://github.com/dmae97/omk) | multi-agent, subagents, model-switching, test-gated-goals | Open-source multi-agent coding CLI for the terminal (TypeScript, MIT). Switch models mid-session; finish goals only when your test passes. |
 | 👀 | [whycodes](https://github.com/whycorporation/whycodes) | rust, tui, byo-provider, local-models | A fast, provider-independent coding agent for the terminal, written in Rust. |
 | 👀 | [Revo](https://github.com/shyringo/revo) | continuous-life, durable-memory, terminal, mit | A terminal AI agent that starts working without a prompt and keeps one durable memory across restarts. Node.js TUI harness, MIT, any OpenAI-compatible key. |
+| 👀 | [Mercury CLI](https://github.com/Whq02/MercuryCLI) | dap-debugger, tree-sitter, lsp, mcp, local-models | Open-source terminal coding agent that sets breakpoints, reads live values and rewrites code by syntax tree in 57 languages. Runs on cloud or local models. |
 
 ## CLI Agent Helpers
 
