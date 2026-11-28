@@ -32,6 +32,7 @@
 | 👀 | [OMK](https://github.com/dmae97/omk) | multi-agent, subagents, model-switching, test-gated-goals | Open-source multi-agent coding CLI for the terminal (TypeScript, MIT). Switch models mid-session; finish goals only when your test passes. |
 | 👀 | [whycodes](https://github.com/whycorporation/whycodes) | rust, tui, byo-provider, local-models | A fast, provider-independent coding agent for the terminal, written in Rust. |
 | 👀 | [Revo](https://github.com/shyringo/revo) | continuous-life, durable-memory, terminal, mit | A terminal AI agent that starts working without a prompt and keeps one durable memory across restarts. Node.js TUI harness, MIT, any OpenAI-compatible key. |
+| 👀 | [Open Max](https://github.com/Max17190/open-max) | rust, tui, prompt-caching, self-extensible | A high-performance, self-extensible terminal coding agent harness in Rust, optimized for prompt caching. Writes new tools and skills as files and calls them on its next step. MIT, any OpenAI-compatible, Anthropic, or local model. |
 
 ## CLI Agent Helpers
 
